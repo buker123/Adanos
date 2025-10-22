@@ -3,7 +3,7 @@ import { Card, CardContent } from '../ui/card';
 import { Button } from '../ui/button';
 import { allProducts } from '../../data/mockData';
 import { useCart } from '../../context/CartContext';
-import { toast } from '../ui/use-toast';
+import { toast } from '../../hooks/use-toast';
 
 const StartOrder = () => {
   const { addToCart } = useCart();
