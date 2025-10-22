@@ -15,8 +15,8 @@ const CheckoutSection = () => {
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Experience Manchester's best smashburgers with our signature dough-based buns. 
-                Each burger is crafted with premium ingredients, hand-smashed to perfection, 
-                and served with love. From classic cheeseburgers to our famous triple LBS monster, 
+                Each burger is crafted with premium halal ingredients, hand-smashed to perfection, 
+                and served with love. From classic cheeseburgers to our famous triple patty monster, 
                 there's something for everyone.
               </p>
               <div className="space-y-4">
