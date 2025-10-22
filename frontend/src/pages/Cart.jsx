@@ -62,7 +62,7 @@ const Cart = () => {
                       <h3 className="text-xl font-bold text-gray-900 mb-1">{item.name}</h3>
                       <p className="text-gray-600 text-sm mb-2">{item.description}</p>
                       <p className="text-2xl font-black text-red-600">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        £{(item.price * item.quantity).toFixed(2)}
                       </p>
                     </div>
                     <div className="flex items-center space-x-4">
