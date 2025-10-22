@@ -151,7 +151,7 @@ export const restaurantInfo = {
     weekend: '11:00 AM - 11:00 PM'
   },
   social: {
-    instagram: '#',
+    instagram: 'https://www.instagram.com/adanosburger/?hl=en',
     facebook: '#',
     twitter: '#'
   },
