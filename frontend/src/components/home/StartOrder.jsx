@@ -49,7 +49,7 @@ const StartOrder = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-black text-red-600">
-                    ${product.price.toFixed(2)}
+                    £{product.price.toFixed(2)}
                   </span>
                   <Button
                     onClick={() => handleAddToOrder(product)}
