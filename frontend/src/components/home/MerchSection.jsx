@@ -52,7 +52,7 @@ const MerchSection = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-black">
-                      ${item.price.toFixed(2)}
+                      £{item.price.toFixed(2)}
                     </span>
                     <Button
                       onClick={() => handleAddToCart(item)}
