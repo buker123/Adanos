@@ -61,7 +61,7 @@ const HeroSlider = () => {
                   </p>
                   <div className="flex items-center space-x-4">
                     <span className="text-4xl font-black text-red-600">
-                      ${burger.price.toFixed(2)}
+                      £{burger.price.toFixed(2)}
                     </span>
                     <Button
                       size="lg"
