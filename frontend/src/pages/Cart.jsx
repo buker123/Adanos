@@ -4,7 +4,7 @@ import { useCart } from '../context/CartContext';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react';
-import { toast } from '../components/ui/use-toast';
+import { toast } from '../hooks/use-toast';
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, getCartTotal, clearCart } = useCart();
