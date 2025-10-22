@@ -66,7 +66,7 @@ export const sides = [
   {
     id: 8,
     name: 'LOADED FRIES',
-    description: 'Fries topped with cheese, bacon, and special sauce',
+    description: 'Fries topped with cheese and special sauce',
     price: 6.99,
     image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&h=600&fit=crop',
     category: 'sides'
