@@ -50,7 +50,7 @@ const HeroSlider = () => {
                 <div className="space-y-6">
                   <div className="inline-block">
                     <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold uppercase">
-                      {burger.size} LBS
+                      {burger.size}
                     </span>
                   </div>
                   <h1 className="text-5xl lg:text-7xl font-black text-gray-900 leading-tight">
