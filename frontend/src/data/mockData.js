@@ -3,8 +3,8 @@
 export const burgers = [
   {
     id: 1,
-    name: 'SINGLE LBS SMASHBURGER',
-    description: 'One 1/3 LB premium beef patty, cheese, lettuce, tomato, pickles, onions, special sauce',
+    name: 'SINGLE SMASHBURGER',
+    description: 'Premium beef patty, cheese, lettuce, tomato, pickles, onions, special sauce',
     price: 8.99,
     image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop',
     category: 'burger',
@@ -12,8 +12,8 @@ export const burgers = [
   },
   {
     id: 2,
-    name: 'DOUBLE LBS SMASHBURGER',
-    description: 'Two 1/3 LB premium beef patties, double cheese, lettuce, tomato, pickles, onions, special sauce',
+    name: 'DOUBLE SMASHBURGER',
+    description: 'Two premium beef patties, double cheese, lettuce, tomato, pickles, onions, special sauce',
     price: 12.99,
     image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop',
     category: 'burger',
@@ -21,8 +21,8 @@ export const burgers = [
   },
   {
     id: 3,
-    name: 'TRIPLE LBS SMASHBURGER',
-    description: 'Three 1/3 LB premium beef patties, triple cheese, lettuce, tomato, pickles, onions, special sauce',
+    name: 'TRIPLE SMASHBURGER',
+    description: 'Three premium beef patties, triple cheese, lettuce, tomato, pickles, onions, special sauce',
     price: 15.99,
     image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&h=600&fit=crop',
     category: 'burger',
