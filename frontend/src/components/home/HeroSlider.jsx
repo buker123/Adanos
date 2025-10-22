@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../ui/button';
 import { burgers } from '../../data/mockData';
 import { useCart } from '../../context/CartContext';
-import { toast } from '../ui/use-toast';
+import { toast } from '../../hooks/use-toast';
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
