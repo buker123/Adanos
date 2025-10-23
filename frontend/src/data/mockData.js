@@ -139,6 +139,26 @@ export const merchandise = [
   }
 ];
 
+export const toppings = [
+  { id: 't1', name: 'Extra Cheese', price: 1.50 },
+  { id: 't2', name: 'Bacon', price: 2.00 },
+  { id: 't3', name: 'Jalapeños', price: 1.00 },
+  { id: 't4', name: 'Fried Egg', price: 1.50 },
+  { id: 't5', name: 'Mushrooms', price: 1.50 },
+  { id: 't6', name: 'Avocado', price: 2.00 },
+  { id: 't7', name: 'Grilled Onions', price: 1.00 },
+  { id: 't8', name: 'Crispy Onions', price: 1.00 }
+];
+
+export const sauces = [
+  { id: 's1', name: 'BBQ Sauce', price: 0.50 },
+  { id: 's2', name: 'Garlic Mayo', price: 0.50 },
+  { id: 's3', name: 'Peri-Peri Sauce', price: 0.50 },
+  { id: 's4', name: 'Hot Sauce', price: 0.50 },
+  { id: 's5', name: 'Burger Sauce', price: 0.50 },
+  { id: 's6', name: 'Mustard', price: 0.50 }
+];
+
 export const allProducts = [...burgers, ...sides, ...drinks, ...merchandise];
 
 export const restaurantInfo = {
