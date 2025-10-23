@@ -24,14 +24,14 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Left Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            {navigation.slice(0, 2).map((item) => (
-              <a
+            {navigation.slice(0, 3).map((item) => (
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-white text-sm font-bold hover:text-red-100 transition-colors"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
