@@ -44,7 +44,7 @@ const Header = () => {
 
           {/* Right Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            {navigation.slice(2).map((item) => (
+            {navigation.slice(3).map((item) => (
               <a
                 key={item.name}
                 href={item.href}
