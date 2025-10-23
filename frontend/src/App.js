@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
