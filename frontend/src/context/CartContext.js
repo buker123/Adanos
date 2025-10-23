@@ -22,10 +22,16 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product) => {
     setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === product.id);
+      // If product has customizations or already has quantity set, add as new item
+      if (product.customizations || product.quantity) {
+        return [...prevCart, product];
+      }
+      
+      // Otherwise, check if same product exists and increment quantity
+      const existingItem = prevCart.find(item => item.id === product.id && !item.customizations);
       if (existingItem) {
         return prevCart.map(item =>
-          item.id === product.id
+          item.id === product.id && !item.customizations
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
