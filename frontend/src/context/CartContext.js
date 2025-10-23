@@ -55,7 +55,15 @@ export const CartProvider = ({ children }) => {
   };
 
   const getCartTotal = () => {
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    return cart.reduce((total, item) => {
+      const basePrice = item.price;
+      const toppingsPrice = item.customizations?.toppings?.reduce((sum, t) => sum + t.price, 0) || 0;
+      const saucesPrice = item.customizations?.sauces?.reduce((sum, s) => sum + s.price, 0) || 0;
+      const sidesPrice = item.customizations?.sides?.reduce((sum, s) => sum + s.price, 0) || 0;
+      const drinksPrice = item.customizations?.drinks?.reduce((sum, d) => sum + d.price, 0) || 0;
+      const itemTotal = (basePrice + toppingsPrice + saucesPrice) * item.quantity + sidesPrice + drinksPrice;
+      return total + itemTotal;
+    }, 0);
   };
 
   const getCartCount = () => {
