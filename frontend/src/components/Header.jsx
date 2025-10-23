@@ -11,11 +11,11 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   const navigation = [
+    { name: 'MENU', href: '/menu' },
     { name: 'PRODUCTS', href: '/#menu' },
     { name: 'MANCHESTER', href: '/#location' },
     { name: 'MERCH', href: '/#merch' },
-    { name: 'CATERING', href: '/#catering' },
-    { name: 'PRESS BUZZ', href: '/#press' }
+    { name: 'CATERING', href: '/#catering' }
   ];
 
   return (
