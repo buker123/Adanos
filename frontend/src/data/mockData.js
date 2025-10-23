@@ -141,13 +141,15 @@ export const merchandise = [
 
 export const toppings = [
   { id: 't1', name: 'Extra Cheese', price: 1.50 },
-  { id: 't2', name: 'Bacon', price: 2.00 },
-  { id: 't3', name: 'Jalapeños', price: 1.00 },
-  { id: 't4', name: 'Fried Egg', price: 1.50 },
-  { id: 't5', name: 'Mushrooms', price: 1.50 },
-  { id: 't6', name: 'Avocado', price: 2.00 },
-  { id: 't7', name: 'Grilled Onions', price: 1.00 },
-  { id: 't8', name: 'Crispy Onions', price: 1.00 }
+  { id: 't2', name: 'Jalapeños', price: 1.00 },
+  { id: 't3', name: 'Fried Egg', price: 1.50 },
+  { id: 't4', name: 'Mushrooms', price: 1.50 },
+  { id: 't5', name: 'Avocado', price: 2.00 },
+  { id: 't6', name: 'Grilled Onions', price: 1.00 },
+  { id: 't7', name: 'Crispy Onions', price: 1.00 },
+  { id: 't8', name: 'Lettuce', price: 0.50 },
+  { id: 't9', name: 'Tomatoes', price: 0.50 },
+  { id: 't10', name: 'Pickles', price: 0.50 }
 ];
 
 export const sauces = [
