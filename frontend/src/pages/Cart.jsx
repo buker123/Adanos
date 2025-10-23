@@ -49,55 +49,115 @@ const Cart = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
-            {cart.map((item) => (
-              <Card key={item.id} className="overflow-hidden">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-6">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-24 h-24 object-cover rounded-lg"
-                    />
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{item.name}</h3>
-                      <p className="text-gray-600 text-sm mb-2">{item.description}</p>
-                      <p className="text-2xl font-black text-red-600">
-                        £{(item.price * item.quantity).toFixed(2)}
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center space-x-2">
+            {cart.map((item, index) => {
+              // Calculate item total including customizations
+              const basePrice = item.price;
+              const toppingsPrice = item.customizations?.toppings?.reduce((sum, t) => sum + t.price, 0) || 0;
+              const saucesPrice = item.customizations?.sauces?.reduce((sum, s) => sum + s.price, 0) || 0;
+              const sidesPrice = item.customizations?.sides?.reduce((sum, s) => sum + s.price, 0) || 0;
+              const drinksPrice = item.customizations?.drinks?.reduce((sum, d) => sum + d.price, 0) || 0;
+              const itemTotal = (basePrice + toppingsPrice + saucesPrice) * item.quantity + sidesPrice + drinksPrice;
+
+              return (
+                <Card key={`${item.id}-${index}`} className="overflow-hidden">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-6">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-24 h-24 object-cover rounded-lg"
+                      />
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-gray-900 mb-1">{item.name}</h3>
+                        <p className="text-gray-600 text-sm mb-3">{item.description}</p>
+                        
+                        {/* Display Customizations */}
+                        {item.customizations && (
+                          <div className="space-y-2 mb-3">
+                            {item.customizations.toppings?.length > 0 && (
+                              <div className="text-sm">
+                                <span className="font-semibold text-gray-700">Toppings: </span>
+                                <span className="text-gray-600">
+                                  {item.customizations.toppings.map(t => `${t.name} (+£${t.price.toFixed(2)})`).join(', ')}
+                                </span>
+                              </div>
+                            )}
+                            {item.customizations.sauces?.length > 0 && (
+                              <div className="text-sm">
+                                <span className="font-semibold text-gray-700">Sauces: </span>
+                                <span className="text-gray-600">
+                                  {item.customizations.sauces.map(s => `${s.name} (+£${s.price.toFixed(2)})`).join(', ')}
+                                </span>
+                              </div>
+                            )}
+                            {item.customizations.sides?.length > 0 && (
+                              <div className="text-sm">
+                                <span className="font-semibold text-gray-700">Sides: </span>
+                                <span className="text-gray-600">
+                                  {item.customizations.sides.map(s => `${s.name} (£${s.price.toFixed(2)})`).join(', ')}
+                                </span>
+                              </div>
+                            )}
+                            {item.customizations.drinks?.length > 0 && (
+                              <div className="text-sm">
+                                <span className="font-semibold text-gray-700">Drinks: </span>
+                                <span className="text-gray-600">
+                                  {item.customizations.drinks.map(d => `${d.name} (£${d.price.toFixed(2)})`).join(', ')}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="text-sm text-gray-500">Base: £{basePrice.toFixed(2)}</p>
+                            {(toppingsPrice + saucesPrice) > 0 && (
+                              <p className="text-sm text-gray-500">Extras: £{(toppingsPrice + saucesPrice).toFixed(2)} × {item.quantity}</p>
+                            )}
+                            {(sidesPrice + drinksPrice) > 0 && (
+                              <p className="text-sm text-gray-500">Sides/Drinks: £{(sidesPrice + drinksPrice).toFixed(2)}</p>
+                            )}
+                          </div>
+                          <p className="text-2xl font-black text-red-600">
+                            £{itemTotal.toFixed(2)}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-end space-y-4">
+                        <div className="flex items-center space-x-2">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className="h-8 w-8 p-0 rounded-full"
+                          >
+                            <Minus className="h-4 w-4" />
+                          </Button>
+                          <span className="text-lg font-bold w-8 text-center">{item.quantity}</span>
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className="h-8 w-8 p-0 rounded-full"
+                          >
+                            <Plus className="h-4 w-4" />
+                          </Button>
+                        </div>
                         <Button
                           size="sm"
-                          variant="outline"
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="h-8 w-8 p-0 rounded-full"
+                          variant="destructive"
+                          onClick={() => removeFromCart(item.id)}
+                          className="h-10 w-10 p-0 rounded-full"
                         >
-                          <Minus className="h-4 w-4" />
-                        </Button>
-                        <span className="text-lg font-bold w-8 text-center">{item.quantity}</span>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="h-8 w-8 p-0 rounded-full"
-                        >
-                          <Plus className="h-4 w-4" />
+                          <Trash2 className="h-4 w-4" />
                         </Button>
                       </div>
-                      <Button
-                        size="sm"
-                        variant="destructive"
-                        onClick={() => removeFromCart(item.id)}
-                        className="h-10 w-10 p-0 rounded-full"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
 
           {/* Order Summary */}
