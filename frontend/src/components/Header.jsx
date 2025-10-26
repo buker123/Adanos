@@ -14,7 +14,6 @@ const Header = () => {
     { name: 'MENU', href: '/menu' },
     { name: 'PRODUCTS', href: '/#menu' },
     { name: 'MANCHESTER', href: '/#location' },
-    { name: 'MERCH', href: '/#merch' },
     { name: 'CATERING', href: '/#catering' }
   ];
 
