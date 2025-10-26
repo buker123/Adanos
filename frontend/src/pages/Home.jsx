@@ -3,7 +3,6 @@ import HeroSlider from '../components/home/HeroSlider';
 import StartOrder from '../components/home/StartOrder';
 import FeatureBoxes from '../components/home/FeatureBoxes';
 import CheckoutSection from '../components/home/CheckoutSection';
-import MerchSection from '../components/home/MerchSection';
 import CateringSection from '../components/home/CateringSection';
 import LocationSection from '../components/home/LocationSection';
 import MapSection from '../components/home/MapSection';
@@ -17,7 +16,6 @@ const Home = () => {
       <StartOrder />
       <FeatureBoxes />
       <CheckoutSection />
-      <MerchSection />
       <CateringSection />
       <LocationSection />
       <MapSection />
