@@ -1,5 +1,5 @@
 import React from 'react';
-import { galleryImages } from '../../data/mockData';
+import { galleryImages, restaurantInfo } from '../../data/mockData';
 import { Instagram } from 'lucide-react';
 
 const GallerySection = () => {
@@ -18,9 +18,12 @@ const GallerySection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <div
+            <a
               key={index}
-              className="relative overflow-hidden rounded-lg shadow-lg group aspect-square cursor-pointer"
+              href={restaurantInfo.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative overflow-hidden rounded-lg shadow-lg group aspect-square cursor-pointer block"
             >
               <img
                 src={image}
@@ -32,7 +35,7 @@ const GallerySection = () => {
                   <Instagram className="h-6 w-6 text-red-600" />
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
