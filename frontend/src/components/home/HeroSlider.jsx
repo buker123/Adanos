@@ -109,20 +109,6 @@ const HeroSlider = () => {
           </div>
         ))}
 
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/40 p-4 rounded-full shadow-lg transition-all hover:scale-110 z-20"
-        >
-          <ChevronLeft className="h-8 w-8 text-white" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/40 p-4 rounded-full shadow-lg transition-all hover:scale-110 z-20"
-        >
-          <ChevronRight className="h-8 w-8 text-white" />
-        </button>
-
         {/* Dots */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
           {slides.map((_, index) => (
