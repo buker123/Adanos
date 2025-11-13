@@ -3,6 +3,12 @@ import { galleryImages, restaurantInfo } from '../../data/mockData';
 import { Instagram } from 'lucide-react';
 
 const GallerySection = () => {
+  const handleInstagramClick = (e) => {
+    e.preventDefault();
+    // Open Instagram in a new window with specific parameters to avoid blocking
+    window.open(restaurantInfo.social.instagram, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -18,11 +24,9 @@ const GallerySection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <a
+            <div
               key={index}
-              href={restaurantInfo.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={handleInstagramClick}
               className="relative overflow-hidden rounded-lg shadow-lg group aspect-square cursor-pointer block"
             >
               <img
@@ -35,7 +39,7 @@ const GallerySection = () => {
                   <Instagram className="h-6 w-6 text-red-600" />
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
