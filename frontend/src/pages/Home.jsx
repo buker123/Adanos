@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSlider from '../components/home/HeroSlider';
 import StartOrder from '../components/home/StartOrder';
 import FeatureBoxes from '../components/home/FeatureBoxes';
-import CateringSection from '../components/home/CateringSection';
+import CheckoutSection from '../components/home/CheckoutSection';
 import LocationSection from '../components/home/LocationSection';
 import MapSection from '../components/home/MapSection';
 import ContactSection from '../components/home/ContactSection';
@@ -14,7 +14,7 @@ const Home = () => {
       <HeroSlider />
       <StartOrder />
       <FeatureBoxes />
-      <CateringSection />
+      <CheckoutSection />
       <LocationSection />
       <MapSection />
       <ContactSection />
