@@ -73,14 +73,13 @@ const Footer = () => {
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a
-                href={restaurantInfo.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => window.open(restaurantInfo.social.instagram, '_blank', 'noopener,noreferrer')}
                 className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Visit our Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
