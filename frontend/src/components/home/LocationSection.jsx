@@ -3,10 +3,10 @@ import { restaurantInfo } from '../../data/mockData';
 
 const LocationSection = () => {
   const locationImages = [
-    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=600&fit=crop'
+    'https://customer-assets.emergentagent.com/job_adanos-grill/artifacts/9efxndur_unnamed.webp',
+    'https://customer-assets.emergentagent.com/job_adanos-grill/artifacts/yfois8ia_unnamed%20%281%29.webp',
+    'https://customer-assets.emergentagent.com/job_adanos-grill/artifacts/spo746qv_unnamed%20%283%29.webp',
+    'https://customer-assets.emergentagent.com/job_adanos-grill/artifacts/ss183v9o_unnamed%20%2810%29.webp'
   ];
 
   return (
