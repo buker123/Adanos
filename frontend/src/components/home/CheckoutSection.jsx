@@ -35,7 +35,7 @@ const CheckoutSection = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <a href="/menu">
+                <Link to="/menu">
                   <Button
                     size="lg"
                     className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-6 rounded-full transition-all hover:scale-105"
@@ -43,7 +43,7 @@ const CheckoutSection = () => {
                     VIEW FULL MENU
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
 
