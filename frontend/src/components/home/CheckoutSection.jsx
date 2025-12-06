@@ -34,13 +34,15 @@ const CheckoutSection = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <Button
-                  size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-6 rounded-full transition-all hover:scale-105"
-                >
-                  VIEW FULL MENU
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <a href="/menu">
+                  <Button
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-6 rounded-full transition-all hover:scale-105"
+                  >
+                    VIEW FULL MENU
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
               </div>
             </div>
 
