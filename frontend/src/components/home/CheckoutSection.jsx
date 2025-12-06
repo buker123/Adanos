@@ -11,10 +11,10 @@ const CheckoutSection = () => {
             {/* Text Content */}
             <div className="p-12 lg:p-16 flex flex-col justify-center">
               <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-                Checkout Dough Burger
+                Adanos Special Burger
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Experience Manchester's best smashburgers with our signature dough-based buns. 
+                Experience Manchester's best smashburgers with our signature special recipe. 
                 Each burger is crafted with premium halal ingredients, hand-smashed to perfection, 
                 and served with love. From classic cheeseburgers to our famous triple patty monster, 
                 there's something for everyone.
