@@ -116,7 +116,10 @@ const Menu = () => {
                       className={`cursor-pointer transition-all hover:shadow-lg ${
                         selectedProduct.id === item.id ? 'border-2 border-red-600 shadow-lg' : ''
                       }`}
-                      onClick={() => setSelectedProduct(item)}
+                      onClick={() => {
+                        setSelectedProduct(item);
+                        setShowProductList(false);
+                      }}
                     >
                       <CardContent className="p-4">
                         <div className="flex items-center space-x-4">
