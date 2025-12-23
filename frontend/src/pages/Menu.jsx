@@ -17,6 +17,7 @@ const Menu = () => {
   const [selectedSauces, setSelectedSauces] = useState([]);
   const [selectedSides, setSelectedSides] = useState([]);
   const [selectedDrinks, setSelectedDrinks] = useState([]);
+  const [showProductList, setShowProductList] = useState(true);
   const { addToCart } = useCart();
 
   const categories = [
