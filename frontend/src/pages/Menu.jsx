@@ -103,8 +103,14 @@ const Menu = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Product List */}
-          <div className="lg:col-span-1 space-y-6">
+          {/* Product List - Hidden on mobile when product is selected */}
+          <div className={`lg:col-span-1 space-y-6 ${selectedProduct ? 'hidden lg:block' : 'block'}`}>
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="lg:hidden mb-4 text-red-600 font-bold flex items-center"
+            >
+              ← Back to products
+            </button>
             {categories.map((category) => (
               <div key={category.name}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{category.name}</h2>
