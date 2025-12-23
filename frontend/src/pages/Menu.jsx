@@ -143,8 +143,8 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Product Details & Customization */}
-          <div className="lg:col-span-2">
+          {/* Product Details & Customization - Show on mobile when product selected */}
+          <div className={`lg:col-span-2 ${selectedProduct ? 'block' : 'hidden lg:block'}`}>
             <Card className="shadow-xl">
               <CardContent className="p-8">
                 {/* Product Image & Info */}
