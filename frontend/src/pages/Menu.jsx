@@ -141,8 +141,15 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Product Details & Customization - Show on mobile when product selected */}
-          <div className={`lg:col-span-2 ${selectedProduct ? 'block' : 'hidden lg:block'}`}>
+          {/* Product Details & Customization */}
+          <div className={`lg:col-span-2 ${!showProductList ? 'block' : 'hidden'} lg:block`}>
+            {/* Back button for mobile */}
+            <button
+              onClick={() => setShowProductList(true)}
+              className="lg:hidden mb-4 text-red-600 font-bold flex items-center text-lg"
+            >
+              ← Back to Menu
+            </button>
             <Card className="shadow-xl">
               <CardContent className="p-8">
                 {/* Product Image & Info */}
