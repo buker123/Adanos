@@ -390,6 +390,102 @@ const Menu = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Sidebar - Popular Items & Info - Takes 1 column */}
+          <div className="lg:col-span-1 space-y-6 hidden lg:block">
+            {/* Popular Items */}
+            <Card className="shadow-lg bg-gradient-to-br from-red-50 to-white">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-black text-gray-900 mb-4 flex items-center">
+                  🔥 Popular Items
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <img
+                      src={mealDeals[0].image}
+                      alt="Single Burger Meal"
+                      className="w-12 h-12 object-cover rounded-lg"
+                    />
+                    <div className="flex-1">
+                      <p className="font-bold text-sm">Single Burger Meal</p>
+                      <p className="text-red-600 font-bold text-sm">£{mealDeals[0].price.toFixed(2)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <img
+                      src={burgers[1].image}
+                      alt="Double Burger"
+                      className="w-12 h-12 object-cover rounded-lg"
+                    />
+                    <div className="flex-1">
+                      <p className="font-bold text-sm">Double Adanos Burger</p>
+                      <p className="text-red-600 font-bold text-sm">£{burgers[1].price.toFixed(2)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <img
+                      src={chicken[1].image}
+                      alt="6 Chicken Strips"
+                      className="w-12 h-12 object-cover rounded-lg"
+                    />
+                    <div className="flex-1">
+                      <p className="font-bold text-sm">6 Chicken Strips</p>
+                      <p className="text-red-600 font-bold text-sm">£{chicken[1].price.toFixed(2)}</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Special Offer */}
+            <Card className="shadow-lg bg-red-600 text-white">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-black mb-2">🎉 Special Offer!</h3>
+                <p className="text-white/90 text-sm mb-3">
+                  Get 10% off on orders over £15
+                </p>
+                <div className="bg-white/20 rounded-lg p-3 text-center">
+                  <p className="text-xs mb-1">Use code:</p>
+                  <p className="text-2xl font-black">ADANOS10</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Delivery Info */}
+            <Card className="shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-black text-gray-900 mb-4">📍 Delivery Info</h3>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start space-x-2">
+                    <span className="text-red-600">✓</span>
+                    <p className="text-gray-600">Free delivery on orders over £20</p>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-red-600">✓</span>
+                    <p className="text-gray-600">Average delivery time: 30-45 min</p>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-red-600">✓</span>
+                    <p className="text-gray-600">All ingredients are 100% Halal</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Contact Info */}
+            <Card className="shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-black text-gray-900 mb-4">📞 Contact Us</h3>
+                <div className="space-y-2 text-sm">
+                  <p className="text-gray-600">153 Oldham Rd, Failsworth</p>
+                  <p className="text-gray-600">Manchester M35 0BX</p>
+                  <a href="tel:01618432233" className="text-red-600 font-bold hover:underline block">
+                    0161 843 2233
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
