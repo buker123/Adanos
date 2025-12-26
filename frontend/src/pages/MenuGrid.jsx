@@ -4,17 +4,23 @@ import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { ShoppingCart } from 'lucide-react';
 import { 
-  mealDeals, 
-  burgers, 
-  loadedFries, 
-  fries, 
-  chicken, 
-  wraps, 
-  sides, 
-  desserts, 
-  milkshakes, 
-  drinks
-} from '../data/justEatMenu';
+  beefBurgers,
+  chickenBurgers,
+  sides,
+  salads,
+  kidsMeals,
+  chickenWings,
+  lightMeals,
+  lambChops,
+  grilledChicken,
+  milkshakes,
+  smoothies,
+  waffles,
+  churros,
+  cookieDough,
+  drinks,
+  allProducts
+} from '../data/uberEatsMenu';
 import { useCart } from '../context/CartContext';
 import { toast } from '../hooks/use-toast';
 
@@ -23,16 +29,21 @@ const MenuGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'All Items', items: [...mealDeals, ...burgers, ...loadedFries, ...fries, ...chicken, ...wraps, ...sides, ...desserts, ...milkshakes, ...drinks] },
-    { id: 'meal-deals', name: 'Meal Deals', items: mealDeals },
-    { id: 'burgers', name: 'Burgers', items: burgers },
-    { id: 'loaded-fries', name: 'Loaded Fries', items: loadedFries },
-    { id: 'fries', name: 'Fries', items: fries },
-    { id: 'chicken', name: 'Chicken', items: chicken },
-    { id: 'wraps', name: 'Wraps', items: wraps },
+    { id: 'all', name: 'All Items', items: allProducts },
+    { id: 'beef-burgers', name: 'Beef Burgers', items: beefBurgers },
+    { id: 'chicken-burgers', name: 'Chicken Burgers', items: chickenBurgers },
+    { id: 'chicken-wings', name: 'Chicken Wings', items: chickenWings },
+    { id: 'grilled-chicken', name: 'Grilled Chicken', items: grilledChicken },
+    { id: 'lamb-chops', name: 'Lamb Chops', items: lambChops },
+    { id: 'light-meals', name: 'Wraps & Light Meals', items: lightMeals },
     { id: 'sides', name: 'Sides', items: sides },
-    { id: 'desserts', name: 'Desserts', items: desserts },
+    { id: 'salads', name: 'Salads', items: salads },
+    { id: 'kids-meals', name: 'Kids Meals', items: kidsMeals },
     { id: 'milkshakes', name: 'Milkshakes', items: milkshakes },
+    { id: 'smoothies', name: 'Smoothies', items: smoothies },
+    { id: 'waffles', name: 'Waffles', items: waffles },
+    { id: 'churros', name: 'Churros', items: churros },
+    { id: 'cookie-dough', name: 'Cookie Dough', items: cookieDough },
     { id: 'drinks', name: 'Drinks', items: drinks }
   ];
 
