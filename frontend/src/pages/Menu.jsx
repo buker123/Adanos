@@ -24,7 +24,7 @@ import { useCart } from '../context/CartContext';
 import { toast } from '../hooks/use-toast';
 
 const Menu = () => {
-  const [selectedProduct, setSelectedProduct] = useState(burgers[0]);
+  const [selectedProduct, setSelectedProduct] = useState(mealDeals[0]);
   const [quantity, setQuantity] = useState(1);
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [selectedSauces, setSelectedSauces] = useState([]);
@@ -34,8 +34,15 @@ const Menu = () => {
   const { addToCart } = useCart();
 
   const categories = [
+    { name: 'Meal Deals', items: mealDeals },
     { name: 'Burgers', items: burgers },
+    { name: 'Loaded Fries', items: loadedFries },
+    { name: 'Fries', items: fries },
+    { name: 'Chicken', items: chicken },
+    { name: 'Wraps', items: wraps },
     { name: 'Sides', items: sides },
+    { name: 'Desserts', items: desserts },
+    { name: 'Milkshakes', items: milkshakes },
     { name: 'Drinks', items: drinks }
   ];
 
