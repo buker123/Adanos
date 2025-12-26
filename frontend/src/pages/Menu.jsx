@@ -161,8 +161,8 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Product Details & Customization */}
-          <div className={`lg:col-span-2 ${!showProductList ? 'block' : 'hidden'} lg:block`}>
+          {/* Product Details & Customization - Takes 3 columns */}
+          <div className={`lg:col-span-3 ${!showProductList ? 'block' : 'hidden'} lg:block`}>
             {/* Back button for mobile */}
             <button
               onClick={() => setShowProductList(true)}
@@ -170,7 +170,11 @@ const Menu = () => {
             >
               ← Back to Menu
             </button>
-            <Card className="shadow-xl">
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Main Product Card - Takes 2 columns */}
+              <div className="lg:col-span-2">
+                <Card className="shadow-xl h-full">
               <CardContent className="p-8">
                 {/* Product Image & Info */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
