@@ -485,11 +485,12 @@ const Menu = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
+          </div> {/* End sidebar */}
+        </div> {/* End grid-cols-3 */}
+      </div> {/* End lg:col-span-3 */}
+      </div> {/* End main grid-cols-4 */}
+      </div> {/* End container */}
+    </div> {/* End outer wrapper */}
   );
 };
 
