@@ -6,7 +6,20 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 import { Checkbox } from '../components/ui/checkbox';
 import { Label } from '../components/ui/label';
 import { Plus, Minus, ShoppingCart } from 'lucide-react';
-import { burgers, sides, drinks, toppings, sauces } from '../data/mockData';
+import { 
+  mealDeals, 
+  burgers, 
+  loadedFries, 
+  fries, 
+  chicken, 
+  wraps, 
+  sides, 
+  desserts, 
+  milkshakes, 
+  drinks,
+  toppings,
+  sauces
+} from '../data/justEatMenu';
 import { useCart } from '../context/CartContext';
 import { toast } from '../hooks/use-toast';
 
