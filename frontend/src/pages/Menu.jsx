@@ -487,7 +487,6 @@ const Menu = () => {
             </Card>
           </div>
         </div>
-        </div>
       </div>
     </div>
   );
