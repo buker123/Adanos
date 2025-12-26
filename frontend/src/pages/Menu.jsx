@@ -123,9 +123,9 @@ const Menu = () => {
           <div className="w-24 h-1 bg-red-600 mx-auto mt-4"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Product List */}
-          <div className={`lg:col-span-1 space-y-6 ${showProductList ? 'block' : 'hidden'} lg:block`}>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          {/* Product List - Takes 1 column */}
+          <div className={`lg:col-span-1 space-y-4 ${showProductList ? 'block' : 'hidden'} lg:block`}>
             {categories.map((category) => (
               <div key={category.name}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{category.name}</h2>
