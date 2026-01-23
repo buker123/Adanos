@@ -10,6 +10,10 @@ from typing import List
 import uuid
 from datetime import datetime, timezone
 
+# Import admin and menu routes
+from routes.admin import router as admin_router
+from routes.menu import router as menu_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
