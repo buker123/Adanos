@@ -4,8 +4,14 @@ from models.menu_item import MenuItem, MenuItemCreate, MenuItemUpdate
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+from pathlib import Path
 
 router = APIRouter(prefix="/api/menu", tags=["menu"])
+
+# Load environment variables
+ROOT_DIR = Path(__file__).parent.parent
+load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
