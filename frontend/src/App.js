@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
 import MenuGrid from "./pages/MenuGrid";
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   return (
