@@ -24,6 +24,8 @@ function App() {
               <Route path="/menu" element={<MenuGrid />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/signin" element={<SignIn />} />
+              <Route path="/admin" element={<AdminLogin />} />
+              <Route path="/admin/dashboard" element={<AdminDashboard />} />
             </Routes>
           </main>
           <Footer />
