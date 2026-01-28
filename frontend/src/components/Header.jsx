@@ -32,7 +32,43 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Left Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            {navigation.slice(0, 3).map((item) => (
+            {/* Menu Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setMenuDropdownOpen(true)}
+              onMouseLeave={() => setMenuDropdownOpen(false)}
+            >
+              <button
+                className="text-white text-sm font-bold hover:text-red-100 transition-colors flex items-center gap-1"
+              >
+                MENU
+                <ChevronDown className={`h-4 w-4 transition-transform ${menuDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              {menuDropdownOpen && (
+                <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
+                  <Link
+                    to="/menu"
+                    className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-600 font-medium transition-colors"
+                  >
+                    All Menu
+                  </Link>
+                  <div className="border-t border-gray-100 my-1"></div>
+                  {menuCategories.map((category) => (
+                    <Link
+                      key={category.name}
+                      to={category.href}
+                      className="block px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600 font-medium transition-colors"
+                    >
+                      {category.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            
+            {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
