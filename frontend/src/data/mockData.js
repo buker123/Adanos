@@ -1,110 +1,363 @@
-// Mock data for Adanos Burger
+// Mock data for Adanos Burger - Based on Physical Menu
 
-export const burgers = [
+// BEEF BURGERS
+export const beefBurgers = [
   {
-    id: 1,
-    name: 'SINGLE SMASHBURGER',
-    description: 'Premium beef patty, cheese, lettuce, tomato, pickles, onions, special sauce',
-    price: 8.99,
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop',
-    category: 'burger',
-    size: 'single'
-  },
-  {
-    id: 2,
-    name: 'DOUBLE SMASHBURGER',
-    description: 'Two premium beef patties, double cheese, lettuce, tomato, pickles, onions, special sauce',
-    price: 12.99,
-    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop',
-    category: 'burger',
-    size: 'double'
-  },
-  {
-    id: 3,
-    name: 'TRIPLE SMASHBURGER',
-    description: 'Three premium beef patties, triple cheese, lettuce, tomato, pickles, onions, special sauce',
-    price: 15.99,
-    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&h=600&fit=crop',
-    category: 'burger',
-    size: 'triple'
-  },
-  {
-    id: 4,
-    name: 'CLASSIC CHEESEBURGER',
-    description: 'Premium beef patty, cheese, lettuce, tomato, onions',
+    id: 'bb1',
+    name: 'Adanos Burger',
+    description: '2 Smashed Angus Patties, American Cheese, Lettuce, Onions, Gherkin\'s and House Sauce',
     price: 7.99,
-    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop',
-    category: 'burger'
+    mealPrice: 9.99,
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop',
+    category: 'beef-burgers',
+    hasMealOption: true
   },
   {
-    id: 5,
-    name: 'CHICKEN BURGER',
-    description: 'Crispy chicken breast, lettuce, tomato, mayo',
-    price: 8.99,
-    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&h=600&fit=crop',
-    category: 'burger'
-  },
-  {
-    id: 6,
-    name: 'VEGGIE BURGER',
-    description: 'Plant-based patty, lettuce, tomato, pickles, vegan sauce',
+    id: 'bb2',
+    name: 'Meat Stack',
+    description: 'Angus Beef Patty, Chicken Fillet, Onion Rings, American Cheese, Salad & House Sauce',
     price: 9.99,
-    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800&h=600&fit=crop',
-    category: 'burger'
+    mealPrice: 11.99,
+    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop',
+    category: 'beef-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'bb3',
+    name: 'Daddy Burger',
+    description: 'Angus Beef Patty, Peri Chicken, Turkey Rasher, American Cheese, Salad & House Sauce',
+    price: 9.99,
+    mealPrice: 11.99,
+    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&h=600&fit=crop',
+    category: 'beef-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'bb4',
+    name: 'Cheese Burger',
+    description: 'Angus Beef, Cheese, Ketchup, Mayo',
+    price: 6.99,
+    mealPrice: 8.99,
+    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop',
+    category: 'beef-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'bb5',
+    name: 'Black Angus Special',
+    description: '2 Black Angus Patty, Caramelised Onions, Secret Sauce, Cheese Slice',
+    price: 9.99,
+    mealPrice: 11.99,
+    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&h=600&fit=crop',
+    category: 'beef-burgers',
+    hasMealOption: true
   }
 ];
 
+// CHICKEN BURGERS
+export const chickenBurgers = [
+  {
+    id: 'cb1',
+    name: 'Peri Peri Burger',
+    description: 'Grilled Peri Peri Sauced Chicken, Cheese, Red Onions, Mayo & Lettuce',
+    price: 6.99,
+    mealPrice: 8.99,
+    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&h=600&fit=crop',
+    category: 'chicken-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'cb2',
+    name: 'Classic Chicken Burger',
+    description: 'Chicken Fillet, Lettuce, Mayo, Cheese Slice',
+    price: 6.49,
+    mealPrice: 8.49,
+    image: 'https://images.unsplash.com/photo-1615297928064-24977384d0da?w=800&h=600&fit=crop',
+    category: 'chicken-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'cb3',
+    name: 'Big Yummy Burger',
+    description: 'Crispy Fried Chicken, Cheese, BBQ Sauce, Hash Brown, Jalepenos, Lettuce, Mayo, Nachos',
+    price: 7.49,
+    mealPrice: 9.49,
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&h=600&fit=crop',
+    category: 'chicken-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'cb4',
+    name: 'Hot Yummy Burger',
+    description: 'Hot Fillet, Hot Sauce, Mayo, Hash Brown, Cheese Slice, Lettuce, Jalapeno',
+    price: 7.49,
+    mealPrice: 9.49,
+    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&h=600&fit=crop',
+    category: 'chicken-burgers',
+    hasMealOption: true
+  },
+  {
+    id: 'cb5',
+    name: 'Hot Chick Burger',
+    description: 'Fried Crispy Chicken with Homemade Hot Sauce, Lettuce, Mayo, Gherkins and Cheese',
+    price: 6.49,
+    mealPrice: 8.99,
+    image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=600&fit=crop',
+    category: 'chicken-burgers',
+    hasMealOption: true
+  }
+];
+
+// BOX MEALS
+export const boxMeals = [
+  {
+    id: 'bm1',
+    name: 'Mini Munch Box',
+    description: 'Beef or Chicken Burger, 2 Onion Rings, Chilli Cheese Bites, 2 Mild Wings, Cheesy House Fries',
+    price: 11.99,
+    image: 'https://images.unsplash.com/photo-1619881590738-a111d176d936?w=800&h=600&fit=crop',
+    category: 'box-meals',
+    hasMealOption: false
+  },
+  {
+    id: 'bm2',
+    name: 'Feast Munch Box',
+    description: '1 Adanos Burger, 1 Chicken Burger, 4 Chilli Cheese Bites, 4 Onion Rings, 4 Wings, 2 Tender Strips, Cheesy Chips',
+    price: 27.99,
+    image: 'https://images.unsplash.com/photo-1561758033-7e924f619b47?w=800&h=600&fit=crop',
+    category: 'box-meals',
+    hasMealOption: false
+  }
+];
+
+// LIGHT MEALS
+export const lightMeals = [
+  {
+    id: 'lm1',
+    name: 'Peri Peri Wrap',
+    description: 'Grilled Peri Peri Chicken, Peri Peri Sauce, Cheese, Red Onions, Lettuce, Mayo',
+    price: 6.99,
+    mealPrice: 7.99,
+    image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  },
+  {
+    id: 'lm2',
+    name: 'Classic Wrap',
+    description: 'Fried Chicken Fillet, Lettuce, Cheese, Mayo',
+    price: 6.99,
+    mealPrice: 7.99,
+    image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  },
+  {
+    id: 'lm3',
+    name: 'Veggie Burger',
+    description: 'Veggie Burger, Cheese, Lettuce, Mayo',
+    price: 6.49,
+    mealPrice: 8.49,
+    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  },
+  {
+    id: 'lm4',
+    name: 'Chicken & Rice',
+    description: 'Chicken Strips Served with Rice',
+    price: 6.99,
+    mealPrice: 9.49,
+    image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  },
+  {
+    id: 'lm5',
+    name: 'Spicy Turkish Vegan Wrap',
+    description: 'Fine Bulgur, Tomato Paste, Fresh Parsley, Green Onion, Olive Oil, Lemon Juice, Turkish Spices',
+    price: 5.99,
+    mealPrice: 7.49,
+    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  },
+  {
+    id: 'lm6',
+    name: 'Chicken Salad',
+    description: 'Mixed leaf salad, olives, feta, lettuce, onion, tomato, cucumber, peppers, chicken',
+    price: 6.49,
+    mealPrice: 8.49,
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop',
+    category: 'light-meals',
+    hasMealOption: true
+  }
+];
+
+// LOADED CHIPS
+export const loadedChips = [
+  {
+    id: 'lc1',
+    name: 'Chicken Loaded Chips',
+    description: '3 Chicken Strips, Skin on Fries, Nachos, Homemade Sauce and Cheese Sauce',
+    price: 7.99,
+    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&h=600&fit=crop',
+    category: 'loaded-chips',
+    hasMealOption: false
+  },
+  {
+    id: 'lc2',
+    name: 'Beef Loaded Chips',
+    description: '2 Beef Patties, Skin on Fries, Nachos, Homemade Sauce and Cheese Sauce',
+    price: 7.99,
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop',
+    category: 'loaded-chips',
+    hasMealOption: false
+  },
+  {
+    id: 'lc3',
+    name: 'Mixed Loaded Chips',
+    description: '1 Beef, 2 Chicken Strips, Skin on Fries, Nachos, Homemade Sauce and Cheese Sauce',
+    price: 8.99,
+    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&h=600&fit=crop',
+    category: 'loaded-chips',
+    hasMealOption: false
+  }
+];
+
+// ADANOS GRILLED
+export const adanosGrilled = [
+  {
+    id: 'ag1',
+    name: 'Butterfly Chicken',
+    description: 'Marinated butterfly chicken served with salad, rice, chips & drinks. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
+    price: 8.99,
+    mealPrice: 10.99,
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag2',
+    name: 'Grilled Chicken Leg',
+    description: 'Tender grilled chicken leg served with salad, rice, chips & drinks. Choose your heat level',
+    price: 6.99,
+    mealPrice: 9.49,
+    image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag3',
+    name: 'Half Chicken',
+    description: 'Half grilled chicken served with salad, rice, chips & drinks. Choose your heat level',
+    price: 9.49,
+    mealPrice: 11.49,
+    image: 'https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag4',
+    name: 'Whole Chicken',
+    description: 'Whole grilled chicken served with salad, rice, chips & drinks. Choose your heat level',
+    price: 12.49,
+    mealPrice: 14.99,
+    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag5',
+    name: '6pcs Chicken Wings',
+    description: 'Meals Served with Fries and Drink. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
+    price: 6.49,
+    mealPrice: 8.99,
+    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag6',
+    name: '12pcs Chicken Wings',
+    description: 'Meals Served with Fries and Drink. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
+    price: 8.49,
+    mealPrice: 10.49,
+    image: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  },
+  {
+    id: 'ag7',
+    name: '4 Lamb Chops',
+    description: 'Meals Served with Salad, Fries and Drink',
+    price: 11.99,
+    mealPrice: 14.49,
+    image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&h=600&fit=crop',
+    category: 'adanos-grilled',
+    hasMealOption: true
+  }
+];
+
+// SIDES
 export const sides = [
   {
-    id: 7,
-    name: 'CLASSIC FRIES',
+    id: 's1',
+    name: 'Classic Fries',
     description: 'Crispy golden fries',
     price: 3.99,
     image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&h=600&fit=crop',
-    category: 'sides'
+    category: 'sides',
+    hasMealOption: false
   },
   {
-    id: 8,
-    name: 'LOADED FRIES',
-    description: 'Fries topped with cheese and special sauce',
-    price: 6.99,
-    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&h=600&fit=crop',
-    category: 'sides'
-  },
-  {
-    id: 9,
-    name: 'ONION RINGS',
+    id: 's2',
+    name: 'Onion Rings',
     description: 'Crispy battered onion rings',
     price: 4.99,
     image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=800&h=600&fit=crop',
-    category: 'sides'
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 's3',
+    name: 'Cheese Fries',
+    description: 'Fries topped with melted cheese sauce',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
   }
 ];
 
+// DRINKS
 export const drinks = [
   {
-    id: 10,
-    name: 'SOFT DRINK',
+    id: 'd1',
+    name: 'Soft Drink',
     description: 'Coca-Cola, Sprite, Fanta',
     price: 2.99,
     image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800&h=600&fit=crop',
-    category: 'drinks'
+    category: 'drinks',
+    hasMealOption: false
   },
   {
-    id: 11,
-    name: 'MILKSHAKE',
+    id: 'd2',
+    name: 'Milkshake',
     description: 'Vanilla, Chocolate, or Strawberry',
     price: 5.99,
     image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop',
-    category: 'drinks'
+    category: 'drinks',
+    hasMealOption: false
   }
 ];
 
+// MERCHANDISE
 export const merchandise = [
   {
     id: 'm1',
     name: 'HOODIE',
-    description: 'I KNOW ON',
+    description: 'Adanos Burger Hoodie',
     price: 49.99,
     image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=600&fit=crop',
     category: 'merch',
@@ -139,6 +392,7 @@ export const merchandise = [
   }
 ];
 
+// Toppings and Sauces
 export const toppings = [
   { id: 't1', name: 'Extra Cheese', price: 1.50 },
   { id: 't2', name: 'Jalapeños', price: 1.00 },
@@ -161,7 +415,31 @@ export const sauces = [
   { id: 's6', name: 'Mustard', price: 0.50 }
 ];
 
-export const allProducts = [...burgers, ...sides, ...drinks, ...merchandise];
+// Menu categories for navigation
+export const menuCategories = [
+  { id: 'beef-burgers', name: 'Beef Burgers', items: beefBurgers },
+  { id: 'chicken-burgers', name: 'Chicken Burgers', items: chickenBurgers },
+  { id: 'box-meals', name: 'Box Meals', items: boxMeals },
+  { id: 'light-meals', name: 'Light Meals', items: lightMeals },
+  { id: 'loaded-chips', name: 'Loaded Chips', items: loadedChips },
+  { id: 'adanos-grilled', name: 'Adanos Grilled', items: adanosGrilled },
+];
+
+// All products combined
+export const allProducts = [
+  ...beefBurgers,
+  ...chickenBurgers,
+  ...boxMeals,
+  ...lightMeals,
+  ...loadedChips,
+  ...adanosGrilled,
+  ...sides,
+  ...drinks,
+  ...merchandise
+];
+
+// Legacy exports for backward compatibility
+export const burgers = [...beefBurgers, ...chickenBurgers];
 
 export const restaurantInfo = {
   name: 'Adanos Burger',
