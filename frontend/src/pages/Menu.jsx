@@ -27,7 +27,7 @@ const Menu = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   
-  const [selectedCategory, setSelectedCategory] = useState(categoryParam || 'all');
+  const [selectedCategory, setSelectedCategory] = useState(categoryParam || 'beef-burgers');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [isMealOption, setIsMealOption] = useState(false);
