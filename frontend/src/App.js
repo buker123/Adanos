@@ -8,9 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
-import MenuGrid from "./pages/MenuGrid";
-import AdminLogin from "./pages/AdminLogin";
-import AdminDashboard from "./pages/AdminDashboard";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
@@ -21,11 +19,9 @@ function App() {
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/menu" element={<MenuGrid />} />
+              <Route path="/menu" element={<Menu />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/signin" element={<SignIn />} />
-              <Route path="/admin" element={<AdminLogin />} />
-              <Route path="/admin/dashboard" element={<AdminDashboard />} />
             </Routes>
           </main>
           <Footer />

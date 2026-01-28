@@ -1,20 +1,13 @@
 import React from 'react';
 import { Card, CardContent } from '../ui/card';
 import { Button } from '../ui/button';
-import { mealDeals, burgers, chicken, milkshakes } from '../../data/justEatMenu';
+import { allProducts } from '../../data/mockData';
 import { useCart } from '../../context/CartContext';
 import { toast } from '../../hooks/use-toast';
 
 const StartOrder = () => {
   const { addToCart } = useCart();
-  
-  // Show featured items from different categories
-  const featuredProducts = [
-    ...mealDeals.slice(0, 2),
-    ...burgers.slice(0, 2),
-    ...chicken.slice(0, 1),
-    ...milkshakes.slice(0, 1)
-  ];
+  const featuredProducts = allProducts.slice(0, 6);
 
   const handleAddToOrder = (product) => {
     addToCart(product);
