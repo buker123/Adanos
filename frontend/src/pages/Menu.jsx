@@ -176,7 +176,7 @@ const Menu = () => {
         <div className="mb-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-gray-900 mb-4">{getCategoryTitle()}</h1>
           <p className="text-xl text-gray-600">
-            {selectedCategory === 'all' ? 'Customize your perfect meal' : 'All meals are served with chips & drinks'}
+            All meals are served with chips & drinks
           </p>
           <div className="w-24 h-1 bg-red-600 mx-auto mt-4"></div>
         </div>
