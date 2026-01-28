@@ -48,13 +48,6 @@ const Header = () => {
               {/* Dropdown Menu */}
               {menuDropdownOpen && (
                 <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
-                  <Link
-                    to="/menu"
-                    className="block px-4 py-2 text-gray-800 hover:bg-red-50 hover:text-red-600 font-medium transition-colors"
-                  >
-                    All Menu
-                  </Link>
-                  <div className="border-t border-gray-100 my-1"></div>
                   {menuCategories.map((category) => (
                     <Link
                       key={category.name}
@@ -143,13 +136,6 @@ const Header = () => {
               </button>
               {mobileMenuDropdownOpen && (
                 <div className="mt-2 ml-4 space-y-2">
-                  <Link
-                    to="/menu"
-                    className="block text-red-100 text-sm font-medium hover:text-white transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    All Menu
-                  </Link>
                   {menuCategories.map((category) => (
                     <Link
                       key={category.name}
