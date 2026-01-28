@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Search, Menu, X, User } from 'lucide-react';
+import { ShoppingCart, Search, Menu, X, User, ChevronDown } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -9,9 +9,19 @@ const Header = () => {
   const { getCartCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [menuDropdownOpen, setMenuDropdownOpen] = useState(false);
+  const [mobileMenuDropdownOpen, setMobileMenuDropdownOpen] = useState(false);
+
+  const menuCategories = [
+    { name: 'Beef Burgers', href: '/menu?category=beef-burgers' },
+    { name: 'Chicken Burgers', href: '/menu?category=chicken-burgers' },
+    { name: 'Box Meals', href: '/menu?category=box-meals' },
+    { name: 'Light Meals', href: '/menu?category=light-meals' },
+    { name: 'Loaded Chips', href: '/menu?category=loaded-chips' },
+    { name: 'Adanos Grilled', href: '/menu?category=adanos-grilled' },
+  ];
 
   const navigation = [
-    { name: 'MENU', href: '/menu' },
     { name: 'PRODUCTS', href: '/menu' },
     { name: 'MANCHESTER', href: '/#location' }
   ];
