@@ -88,15 +88,6 @@ const Header = () => {
 
           {/* Right Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            {navigation.slice(3).map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-white text-sm font-bold hover:text-red-100 transition-colors"
-              >
-                {item.name}
-              </a>
-            ))}
             <button
               onClick={() => setSearchOpen(!searchOpen)}
               className="text-white hover:text-red-100 transition-colors"
