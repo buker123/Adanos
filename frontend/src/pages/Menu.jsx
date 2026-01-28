@@ -61,14 +61,7 @@ const Menu = () => {
       case 'adanos-grilled':
         return [{ name: 'Adanos Grilled', items: adanosGrilled }];
       default:
-        return [
-          { name: 'Beef Burgers', items: beefBurgers },
-          { name: 'Chicken Burgers', items: chickenBurgers },
-          { name: 'Box Meals', items: boxMeals },
-          { name: 'Light Meals', items: lightMeals },
-          { name: 'Loaded Chips', items: loadedChips },
-          { name: 'Adanos Grilled', items: adanosGrilled },
-        ];
+        return [{ name: 'Beef Burgers', items: beefBurgers }];
     }
   };
 
