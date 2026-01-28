@@ -184,13 +184,6 @@ const Menu = () => {
         {/* Category Filter Tabs */}
         <div className="mb-8 overflow-x-auto">
           <div className="flex space-x-2 pb-2 min-w-max">
-            <Button
-              variant={selectedCategory === 'all' ? 'default' : 'outline'}
-              className={selectedCategory === 'all' ? 'bg-red-600 hover:bg-red-700' : ''}
-              onClick={() => setSelectedCategory('all')}
-            >
-              All Menu
-            </Button>
             {menuCategories.map((cat) => (
               <Button
                 key={cat.id}
