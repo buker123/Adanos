@@ -132,15 +132,47 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-red-700 border-t border-red-500">
           <nav className="container mx-auto px-4 py-4 space-y-3">
+            {/* Mobile Menu Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileMenuDropdownOpen(!mobileMenuDropdownOpen)}
+                className="flex items-center justify-between w-full text-white text-sm font-bold hover:text-red-100 transition-colors"
+              >
+                MENU
+                <ChevronDown className={`h-4 w-4 transition-transform ${mobileMenuDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {mobileMenuDropdownOpen && (
+                <div className="mt-2 ml-4 space-y-2">
+                  <Link
+                    to="/menu"
+                    className="block text-red-100 text-sm font-medium hover:text-white transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    All Menu
+                  </Link>
+                  {menuCategories.map((category) => (
+                    <Link
+                      key={category.name}
+                      to={category.href}
+                      className="block text-red-100 text-sm font-medium hover:text-white transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {category.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="block text-white text-sm font-bold hover:text-red-100 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <Link
               to="/signin"
