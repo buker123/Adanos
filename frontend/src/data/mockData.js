@@ -488,7 +488,7 @@ export const kidsMeals = [
     name: 'Popcorn Chicken Meal',
     description: 'Popcorn chicken served with fries and a drink',
     price: 5.99,
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=800&h=600&fit=crop',
+    image: '',
     category: 'kids-meals',
     hasMealOption: false
   },
@@ -497,7 +497,7 @@ export const kidsMeals = [
     name: 'Chicken Fillet Burger Meal',
     description: 'Kids chicken burger with fries and a drink',
     price: 5.99,
-    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&h=600&fit=crop',
+    image: '',
     category: 'kids-meals',
     hasMealOption: false
   },
@@ -506,7 +506,7 @@ export const kidsMeals = [
     name: 'Cheese Burger Meal',
     description: 'Kids cheese burger with fries and a drink',
     price: 5.99,
-    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop',
+    image: '',
     category: 'kids-meals',
     hasMealOption: false
   }
