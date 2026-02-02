@@ -253,7 +253,7 @@ export const adanosGrilled = [
     description: 'Whole grilled chicken served with salad, rice, chips & drinks. Choose your heat level',
     price: 12.49,
     mealPrice: 14.99,
-    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=600&fit=crop',
+    image: '',
     category: 'adanos-grilled',
     hasMealOption: true
   },
@@ -273,7 +273,7 @@ export const adanosGrilled = [
     description: 'Meals Served with Fries and Drink. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
     price: 8.49,
     mealPrice: 10.49,
-    image: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800&h=600&fit=crop',
+    image: '',
     category: 'adanos-grilled',
     hasMealOption: true
   },
