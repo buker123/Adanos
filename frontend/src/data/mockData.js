@@ -399,7 +399,7 @@ export const milkshakes = [
     name: 'Ferrero Milkshake',
     description: 'Creamy Ferrero Rocher flavoured milkshake',
     price: 4.99,
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   },
@@ -408,7 +408,7 @@ export const milkshakes = [
     name: 'Lotus Milkshake',
     description: 'Delicious Lotus Biscoff milkshake',
     price: 4.99,
-    image: 'https://images.unsplash.com/photo-1568901839119-631418a3910d?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   },
@@ -417,7 +417,7 @@ export const milkshakes = [
     name: 'Oreo and Peanut Butter',
     description: 'Oreo cookies with peanut butter milkshake',
     price: 4.99,
-    image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   },
@@ -426,7 +426,7 @@ export const milkshakes = [
     name: 'Chocolate Milkshake',
     description: 'Rich chocolate milkshake',
     price: 3.99,
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   },
@@ -435,7 +435,7 @@ export const milkshakes = [
     name: 'Strawberry Milkshake',
     description: 'Fresh strawberry milkshake',
     price: 3.99,
-    image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   },
@@ -444,7 +444,7 @@ export const milkshakes = [
     name: 'Banana Milkshake',
     description: 'Creamy banana milkshake',
     price: 3.99,
-    image: 'https://images.unsplash.com/photo-1553787499-6f9133860278?w=800&h=600&fit=crop',
+    image: '',
     category: 'milkshakes',
     hasMealOption: false
   }
@@ -457,7 +457,7 @@ export const smoothies = [
     name: 'Blueberry Bliss',
     description: 'Refreshing blueberry smoothie',
     price: 4.49,
-    image: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=800&h=600&fit=crop',
+    image: '',
     category: 'smoothies',
     hasMealOption: false
   },
@@ -466,7 +466,7 @@ export const smoothies = [
     name: 'Strawberry Refresher',
     description: 'Fresh strawberry smoothie',
     price: 4.49,
-    image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&h=600&fit=crop',
+    image: '',
     category: 'smoothies',
     hasMealOption: false
   },
@@ -475,7 +475,7 @@ export const smoothies = [
     name: 'Raspberry Dream',
     description: 'Delicious raspberry smoothie',
     price: 4.49,
-    image: 'https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=800&h=600&fit=crop',
+    image: '',
     category: 'smoothies',
     hasMealOption: false
   }
