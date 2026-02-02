@@ -15,13 +15,13 @@ const LocationSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-              Manchester Location
+              Oldham Location
             </h2>
             <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Visit us at our Manchester location for an unforgettable dining experience. 
+              Visit us at our Oldham location for an unforgettable dining experience. 
               Our cozy, modern space is perfect for quick bites or leisurely meals with family and friends. 
-              Located in the heart of Failsworth, we're easily accessible and ready to serve you the best 
+              Located in Failsworth, we're easily accessible and ready to serve you the best 
               smashburgers in town. Come hungry, leave happy!
             </p>
           </div>
