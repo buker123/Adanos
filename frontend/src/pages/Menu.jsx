@@ -14,7 +14,13 @@ import {
   lightMeals, 
   loadedChips, 
   adanosGrilled,
-  sides, 
+  sides,
+  kidsMeals,
+  milkshakes,
+  smoothies,
+  iceCream,
+  waffles,
+  desserts,
   drinks, 
   toppings, 
   sauces,
@@ -60,6 +66,20 @@ const Menu = () => {
         return [{ name: 'Loaded Chips', items: loadedChips }];
       case 'adanos-grilled':
         return [{ name: 'Adanos Grilled', items: adanosGrilled }];
+      case 'sides':
+        return [{ name: 'Sides', items: sides }];
+      case 'kids-meals':
+        return [{ name: 'Kids Meals', items: kidsMeals }];
+      case 'milkshakes':
+        return [{ name: 'Milkshakes', items: milkshakes }];
+      case 'smoothies':
+        return [{ name: 'Smoothies', items: smoothies }];
+      case 'ice-cream':
+        return [{ name: 'Ice Cream', items: iceCream }];
+      case 'waffles':
+        return [{ name: 'Waffles', items: waffles }];
+      case 'desserts':
+        return [{ name: 'Desserts', items: desserts }];
       default:
         return [{ name: 'Beef Burgers', items: beefBurgers }];
     }
