@@ -519,7 +519,7 @@ export const iceCream = [
     name: 'Strawberry Ice Cream',
     description: 'Creamy strawberry ice cream',
     price: 2.99,
-    image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&h=600&fit=crop',
+    image: '',
     category: 'ice-cream',
     hasMealOption: false
   },
@@ -528,7 +528,7 @@ export const iceCream = [
     name: 'Chocolate Ice Cream',
     description: 'Rich chocolate ice cream',
     price: 2.99,
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop',
+    image: '',
     category: 'ice-cream',
     hasMealOption: false
   },
@@ -537,7 +537,7 @@ export const iceCream = [
     name: 'Oreo Ice Cream',
     description: 'Oreo cookies and cream ice cream',
     price: 3.49,
-    image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=800&h=600&fit=crop',
+    image: '',
     category: 'ice-cream',
     hasMealOption: false
   },
@@ -546,7 +546,7 @@ export const iceCream = [
     name: 'Lotus Ice Cream',
     description: 'Lotus Biscoff flavoured ice cream',
     price: 3.49,
-    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800&h=600&fit=crop',
+    image: '',
     category: 'ice-cream',
     hasMealOption: false
   },
@@ -555,7 +555,7 @@ export const iceCream = [
     name: 'Vanilla Ice Cream',
     description: 'Classic vanilla ice cream',
     price: 2.99,
-    image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
+    image: '',
     category: 'ice-cream',
     hasMealOption: false
   }
@@ -568,7 +568,7 @@ export const waffles = [
     name: 'Ferrero Rocher Waffle',
     description: 'Belgian waffle topped with Ferrero Rocher and Nutella',
     price: 6.99,
-    image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=800&h=600&fit=crop',
+    image: '',
     category: 'waffles',
     hasMealOption: false
   },
@@ -577,7 +577,7 @@ export const waffles = [
     name: 'Nutella Waffle',
     description: 'Belgian waffle with Nutella spread',
     price: 5.99,
-    image: 'https://images.unsplash.com/photo-1459789034005-ba29c5783491?w=800&h=600&fit=crop',
+    image: '',
     category: 'waffles',
     hasMealOption: false
   },
@@ -586,7 +586,7 @@ export const waffles = [
     name: 'Lotus Biscoff Waffle',
     description: 'Belgian waffle with Lotus Biscoff spread and crumbs',
     price: 6.49,
-    image: 'https://images.unsplash.com/photo-1598214886806-c87b84b7078b?w=800&h=600&fit=crop',
+    image: '',
     category: 'waffles',
     hasMealOption: false
   },
@@ -595,7 +595,7 @@ export const waffles = [
     name: 'Oreo Crumble Waffle',
     description: 'Belgian waffle topped with Oreo crumbles and cream',
     price: 6.49,
-    image: 'https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=800&h=600&fit=crop',
+    image: '',
     category: 'waffles',
     hasMealOption: false
   }
@@ -608,7 +608,7 @@ export const desserts = [
     name: 'Cakes',
     description: 'Selection of freshly baked cakes',
     price: 4.99,
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop',
+    image: '',
     category: 'desserts',
     hasMealOption: false
   },
@@ -617,7 +617,7 @@ export const desserts = [
     name: 'Churros Lazo',
     description: 'Crispy churros with chocolate dipping sauce',
     price: 5.49,
-    image: 'https://images.unsplash.com/photo-1624371414361-e670e5e42b0d?w=800&h=600&fit=crop',
+    image: '',
     category: 'desserts',
     hasMealOption: false
   },
@@ -626,7 +626,7 @@ export const desserts = [
     name: 'Cookie Dough',
     description: 'Warm cookie dough with ice cream',
     price: 5.99,
-    image: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=800&h=600&fit=crop',
+    image: '',
     category: 'desserts',
     hasMealOption: false
   }
