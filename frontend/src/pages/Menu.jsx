@@ -255,9 +255,7 @@ const Menu = () => {
                               className="w-20 h-20 object-cover rounded-lg"
                             />
                           ) : (
-                            <div className="w-20 h-20 bg-red-100 rounded-lg flex items-center justify-center">
-                              <span className="text-red-600 text-3xl font-bold">🍔</span>
-                            </div>
+                            <div className="w-20 h-20 bg-red-100 rounded-lg"></div>
                           )}
                           <div className="flex-1">
                             <h3 className="font-bold text-gray-900">{item.name}</h3>
