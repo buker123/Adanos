@@ -36,7 +36,7 @@ const AboutSection = () => {
               <span className="text-red-600"> Halal Smashburgers</span>
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              Welcome to Adanos Burger, where passion meets perfection. Located in the heart of Manchester, 
+              Welcome to Adanos Burger, where passion meets perfection. Located in Oldham, 
               we've been serving the finest halal smashburgers since day one. Our commitment to quality 
               ingredients and authentic flavors has made us a beloved destination for burger enthusiasts.
             </p>
