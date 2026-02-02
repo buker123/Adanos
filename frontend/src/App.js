@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import { Toaster } from "./components/ui/toaster";
 import Header from "./components/Header";
@@ -11,6 +11,17 @@ import SignIn from "./pages/SignIn";
 import Menu from "./pages/Menu";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+
+// Layout for public pages with Header and Footer
+const PublicLayout = () => (
+  <>
+    <Header />
+    <main className="flex-1">
+      <Outlet />
+    </main>
+    <Footer />
+  </>
+);
 
 function App() {
   return (
@@ -23,20 +34,12 @@ function App() {
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
             
             {/* Public routes with header/footer */}
-            <Route path="*" element={
-              <>
-                <Header />
-                <main className="flex-1">
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/menu" element={<Menu />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/signin" element={<SignIn />} />
-                  </Routes>
-                </main>
-                <Footer />
-              </>
-            } />
+            <Route element={<PublicLayout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/signin" element={<SignIn />} />
+            </Route>
           </Routes>
           <Toaster />
         </div>
