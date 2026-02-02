@@ -8,7 +8,7 @@ export const beefBurgers = [
     description: '2 Smashed Angus Patties, American Cheese, Lettuce, Onions, Gherkin\'s and House Sauce',
     price: 7.99,
     mealPrice: 9.99,
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/67vgde9o_Adanos%20BUrger.webp',
     category: 'beef-burgers',
     hasMealOption: true
   },
@@ -18,7 +18,7 @@ export const beefBurgers = [
     description: 'Angus Beef Patty, Chicken Fillet, Onion Rings, American Cheese, Salad & House Sauce',
     price: 9.99,
     mealPrice: 11.99,
-    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/oh3gy15a_Meat%20Stack.webp',
     category: 'beef-burgers',
     hasMealOption: true
   },
@@ -28,7 +28,7 @@ export const beefBurgers = [
     description: 'Angus Beef Patty, Peri Chicken, Turkey Rasher, American Cheese, Salad & House Sauce',
     price: 9.99,
     mealPrice: 11.99,
-    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/g1rp4zla_Daddy%20Burger.webp',
     category: 'beef-burgers',
     hasMealOption: true
   },
@@ -38,7 +38,7 @@ export const beefBurgers = [
     description: 'Angus Beef, Cheese, Ketchup, Mayo',
     price: 6.99,
     mealPrice: 8.99,
-    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/jyf3g8hq_cheese%20burger.webp',
     category: 'beef-burgers',
     hasMealOption: true
   },
@@ -48,7 +48,7 @@ export const beefBurgers = [
     description: '2 Black Angus Patty, Caramelised Onions, Secret Sauce, Cheese Slice',
     price: 9.99,
     mealPrice: 11.99,
-    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/54ti5jjs_black%20Angus%20Burger.jpeg',
     category: 'beef-burgers',
     hasMealOption: true
   }
