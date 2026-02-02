@@ -223,17 +223,7 @@ export const adanosGrilled = [
     description: 'Marinated butterfly chicken served with salad, rice, chips & drinks. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
     price: 8.99,
     mealPrice: 10.99,
-    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=800&h=600&fit=crop',
-    category: 'adanos-grilled',
-    hasMealOption: true
-  },
-  {
-    id: 'ag2',
-    name: 'Grilled Chicken Leg',
-    description: 'Tender grilled chicken leg served with salad, rice, chips & drinks. Choose your heat level',
-    price: 6.99,
-    mealPrice: 9.49,
-    image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/ulhyskkv_Butterfly%20Chicken.jpeg',
     category: 'adanos-grilled',
     hasMealOption: true
   },
@@ -243,17 +233,7 @@ export const adanosGrilled = [
     description: 'Half grilled chicken served with salad, rice, chips & drinks. Choose your heat level',
     price: 9.49,
     mealPrice: 11.49,
-    image: 'https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=800&h=600&fit=crop',
-    category: 'adanos-grilled',
-    hasMealOption: true
-  },
-  {
-    id: 'ag4',
-    name: 'Whole Chicken',
-    description: 'Whole grilled chicken served with salad, rice, chips & drinks. Choose your heat level',
-    price: 12.49,
-    mealPrice: 14.99,
-    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/68ehhavv_Half%20Chicken.jpeg',
     category: 'adanos-grilled',
     hasMealOption: true
   },
@@ -263,17 +243,7 @@ export const adanosGrilled = [
     description: 'Meals Served with Fries and Drink. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
     price: 6.49,
     mealPrice: 8.99,
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&h=600&fit=crop',
-    category: 'adanos-grilled',
-    hasMealOption: true
-  },
-  {
-    id: 'ag6',
-    name: '12pcs Chicken Wings',
-    description: 'Meals Served with Fries and Drink. Choose your heat: Lemon & Herb, Mild, Hot, or Buffalo BBQ',
-    price: 8.49,
-    mealPrice: 10.49,
-    image: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/fu6n6o58_6%20Pieces%20Of%20Chicken%20Wings.jpeg',
     category: 'adanos-grilled',
     hasMealOption: true
   },
@@ -283,7 +253,7 @@ export const adanosGrilled = [
     description: 'Meals Served with Salad, Fries and Drink',
     price: 11.99,
     mealPrice: 14.49,
-    image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/rdgpk4e7_Lamb%20Chops.jpeg',
     category: 'adanos-grilled',
     hasMealOption: true
   }
