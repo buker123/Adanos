@@ -175,6 +175,13 @@ const Menu = () => {
       case 'light-meals': return 'Light Meals';
       case 'loaded-chips': return 'Loaded Chips';
       case 'adanos-grilled': return 'Adanos Grilled';
+      case 'sides': return 'Sides';
+      case 'kids-meals': return 'Kids Meals';
+      case 'milkshakes': return 'Milkshakes';
+      case 'smoothies': return 'Smoothies';
+      case 'ice-cream': return 'Ice Cream';
+      case 'waffles': return 'Waffles';
+      case 'desserts': return 'Desserts';
       default: return 'Our Menu';
     }
   };
