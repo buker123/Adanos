@@ -84,10 +84,11 @@ const Header = () => {
             </div>
             
             {navigation.map((item) => (
-              <Link
+              <a
                 key={item.name}
-                to={item.href}
-                className="text-white text-sm font-bold hover:text-red-100 transition-colors"
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-white text-sm font-bold hover:text-red-100 transition-colors cursor-pointer"
               >
                 {item.name}
               </Link>
