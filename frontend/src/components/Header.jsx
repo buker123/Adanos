@@ -22,8 +22,8 @@ const Header = () => {
   ];
 
   const navigation = [
-    { name: 'PRODUCTS', href: '/menu' },
-    { name: 'MANCHESTER', href: '/#location' }
+    { name: 'ABOUT', href: '/#about' },
+    { name: 'FIND US', href: '/#location' }
   ];
 
   return (
