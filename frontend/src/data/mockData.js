@@ -296,7 +296,7 @@ export const sides = [
     name: 'House Fries',
     description: 'Crispy golden house fries',
     price: 2.99,
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -305,7 +305,7 @@ export const sides = [
     name: 'Cheesy House Fries',
     description: 'House fries topped with melted cheese sauce',
     price: 3.99,
-    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -314,7 +314,7 @@ export const sides = [
     name: 'Sweet Potato Fries',
     description: 'Crispy sweet potato fries',
     price: 3.99,
-    image: 'https://images.unsplash.com/photo-1604152135912-04a022e23696?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -323,7 +323,7 @@ export const sides = [
     name: 'Curly Fries',
     description: 'Seasoned curly fries',
     price: 3.49,
-    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -332,7 +332,7 @@ export const sides = [
     name: 'Popcorn Chicken',
     description: 'Crispy bite-sized chicken pieces',
     price: 4.49,
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -341,7 +341,7 @@ export const sides = [
     name: 'Chilli Cheese Bites',
     description: 'Spicy cheese bites',
     price: 4.49,
-    image: 'https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -350,7 +350,7 @@ export const sides = [
     name: 'Onion Rings',
     description: 'Crispy battered onion rings',
     price: 3.49,
-    image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -359,7 +359,7 @@ export const sides = [
     name: 'Peri Rice',
     description: 'Flavourful peri peri rice',
     price: 2.99,
-    image: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -368,7 +368,7 @@ export const sides = [
     name: 'Coleslaw',
     description: 'Creamy homemade coleslaw',
     price: 1.99,
-    image: 'https://images.unsplash.com/photo-1625938145744-e380515399bf?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -377,7 +377,7 @@ export const sides = [
     name: 'Houmous',
     description: 'Creamy houmous dip',
     price: 2.49,
-    image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   },
@@ -386,7 +386,7 @@ export const sides = [
     name: 'Portion Salad',
     description: 'Fresh mixed salad',
     price: 2.49,
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=600&fit=crop',
+    image: '',
     category: 'sides',
     hasMealOption: false
   }
