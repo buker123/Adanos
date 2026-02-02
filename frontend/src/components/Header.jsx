@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingCart, Search, Menu, X, User, ChevronDown } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { Button } from './ui/button';
@@ -11,6 +11,7 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuDropdownOpen, setMenuDropdownOpen] = useState(false);
   const [mobileMenuDropdownOpen, setMobileMenuDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuCategories = [
     { name: 'Beef Burgers', href: '/menu?category=beef-burgers' },
@@ -22,9 +23,30 @@ const Header = () => {
   ];
 
   const navigation = [
-    { name: 'ABOUT', href: '/#about' },
-    { name: 'FIND US', href: '/#location' }
+    { name: 'ABOUT', href: '#about' },
+    { name: 'FIND US', href: '#location' }
   ];
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    if (href.startsWith('#')) {
+      // If we're not on the home page, navigate there first
+      if (window.location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.getElementById(href.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        const element = document.getElementById(href.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-red-600 shadow-md">
