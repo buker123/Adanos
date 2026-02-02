@@ -32,7 +32,7 @@ const AboutSection = () => {
           <div className="lg:pl-8">
             <Badge className="bg-red-100 text-red-600 mb-4">ABOUT US</Badge>
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-              Manchester's Finest
+              Oldham's Finest
               <span className="text-red-600"> Halal Smashburgers</span>
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">

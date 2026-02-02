@@ -10,7 +10,7 @@ const HeroSlider = () => {
       id: 1,
       image: 'https://customer-assets.emergentagent.com/job_adanos-grill/artifacts/9efxndur_unnamed.webp',
       title: 'Welcome to Adanos Burger',
-      subtitle: 'Manchester\'s Finest Halal Smashburgers'
+      subtitle: 'Oldham\'s Finest Halal Smashburgers'
     },
     {
       id: 2,

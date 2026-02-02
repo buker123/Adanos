@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">ADANOS BURGER</h3>
             <p className="text-gray-400 text-sm">
-              Manchester's finest smashburgers made with premium ingredients and served with love.
+              Oldham's finest smashburgers made with premium ingredients and served with love.
             </p>
           </div>
 

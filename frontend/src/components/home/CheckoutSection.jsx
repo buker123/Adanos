@@ -15,7 +15,7 @@ const CheckoutSection = () => {
                 Adanos Special Burger
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Experience Manchester's best smashburgers with our signature special recipe. 
+                Experience Oldham's best smashburgers with our signature special recipe. 
                 Each burger is crafted with premium halal ingredients, hand-smashed to perfection, 
                 and served with love. From classic cheeseburgers to our famous triple patty monster, 
                 there's something for everyone.
