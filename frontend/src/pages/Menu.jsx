@@ -297,9 +297,7 @@ const Menu = () => {
                         className="w-full h-80 object-cover rounded-xl shadow-lg"
                       />
                     ) : (
-                      <div className="w-full h-80 bg-red-100 rounded-xl shadow-lg flex items-center justify-center">
-                        <span className="text-red-600 text-8xl">🍔</span>
-                      </div>
+                      <div className="w-full h-80 bg-red-100 rounded-xl shadow-lg"></div>
                     )}
                     <Badge className="absolute top-4 left-4 bg-green-600 text-white">
                       HALAL
