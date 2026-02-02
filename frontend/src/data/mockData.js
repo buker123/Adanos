@@ -765,12 +765,13 @@ export const restaurantInfo = {
 };
 
 export const galleryImages = [
-  'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?w=800&h=600&fit=crop'
+  // Real Adanos Burger food photos
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/67vgde9o_Adanos%20BUrger.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/oh3gy15a_Meat%20Stack.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/g1rp4zla_Daddy%20Burger.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/xb24i529_Peri%20Peri%20Burger.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/5ol2sf81_Big%20Yummy%20Burger.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/29ou6h7z_Hot%20Yummy%20Burger.webp',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/rdgpk4e7_Lamb%20Chops.jpeg',
+  'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/68ehhavv_Half%20Chicken.jpeg'
 ];
