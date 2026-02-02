@@ -233,7 +233,7 @@ export const adanosGrilled = [
     description: 'Tender grilled chicken leg served with salad, rice, chips & drinks. Choose your heat level',
     price: 6.99,
     mealPrice: 9.49,
-    image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/o2eq4tq1_Chicken%20Leg.jpeg',
     category: 'adanos-grilled',
     hasMealOption: true
   },
