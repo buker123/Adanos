@@ -68,6 +68,7 @@ const Header = () => {
               onMouseLeave={() => setMenuDropdownOpen(false)}
             >
               <button
+                onClick={() => setMenuDropdownOpen(!menuDropdownOpen)}
                 className="text-white text-sm font-bold hover:text-red-100 transition-colors flex items-center gap-1"
               >
                 MENU
@@ -82,6 +83,7 @@ const Header = () => {
                       key={category.name}
                       to={category.href}
                       className="block px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600 font-medium transition-colors"
+                      onClick={() => setMenuDropdownOpen(false)}
                     >
                       {category.name}
                     </Link>
