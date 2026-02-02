@@ -62,7 +62,7 @@ export const chickenBurgers = [
     description: 'Grilled Peri Peri Sauced Chicken, Cheese, Red Onions, Mayo & Lettuce',
     price: 6.99,
     mealPrice: 8.99,
-    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/xb24i529_Peri%20Peri%20Burger.webp',
     category: 'chicken-burgers',
     hasMealOption: true
   },
@@ -72,7 +72,7 @@ export const chickenBurgers = [
     description: 'Chicken Fillet, Lettuce, Mayo, Cheese Slice',
     price: 6.49,
     mealPrice: 8.49,
-    image: 'https://images.unsplash.com/photo-1615297928064-24977384d0da?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/o4ck70mu_Classic.webp',
     category: 'chicken-burgers',
     hasMealOption: true
   },
@@ -82,7 +82,7 @@ export const chickenBurgers = [
     description: 'Crispy Fried Chicken, Cheese, BBQ Sauce, Hash Brown, Jalepenos, Lettuce, Mayo, Nachos',
     price: 7.49,
     mealPrice: 9.49,
-    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/5ol2sf81_Big%20Yummy%20Burger.webp',
     category: 'chicken-burgers',
     hasMealOption: true
   },
@@ -92,7 +92,7 @@ export const chickenBurgers = [
     description: 'Hot Fillet, Hot Sauce, Mayo, Hash Brown, Cheese Slice, Lettuce, Jalapeno',
     price: 7.49,
     mealPrice: 9.49,
-    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&h=600&fit=crop',
+    image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/29ou6h7z_Hot%20Yummy%20Burger.webp',
     category: 'chicken-burgers',
     hasMealOption: true
   },
