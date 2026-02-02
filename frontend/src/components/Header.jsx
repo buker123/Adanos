@@ -67,13 +67,13 @@ const Header = () => {
               onMouseEnter={() => setMenuDropdownOpen(true)}
               onMouseLeave={() => setMenuDropdownOpen(false)}
             >
-              <button
-                onClick={() => setMenuDropdownOpen(!menuDropdownOpen)}
+              <Link
+                to="/menu"
                 className="text-white text-sm font-bold hover:text-red-100 transition-colors flex items-center gap-1"
               >
                 MENU
                 <ChevronDown className={`h-4 w-4 transition-transform ${menuDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
+              </Link>
               
               {/* Dropdown Menu */}
               {menuDropdownOpen && (
