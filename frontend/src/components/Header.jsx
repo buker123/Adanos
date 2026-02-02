@@ -174,14 +174,17 @@ const Header = () => {
             </div>
             
             {navigation.map((item) => (
-              <Link
+              <a
                 key={item.name}
-                to={item.href}
-                className="block text-white text-sm font-bold hover:text-red-100 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
+                href={item.href}
+                className="block text-white text-sm font-bold hover:text-red-100 transition-colors cursor-pointer"
+                onClick={(e) => {
+                  handleNavClick(e, item.href);
+                  setMobileMenuOpen(false);
+                }}
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
             <Link
               to="/signin"
