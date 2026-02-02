@@ -95,16 +95,6 @@ export const chickenBurgers = [
     image: 'https://customer-assets.emergentagent.com/job_adanos-import/artifacts/29ou6h7z_Hot%20Yummy%20Burger.webp',
     category: 'chicken-burgers',
     hasMealOption: true
-  },
-  {
-    id: 'cb5',
-    name: 'Hot Chick Burger',
-    description: 'Fried Crispy Chicken with Homemade Hot Sauce, Lettuce, Mayo, Gherkins and Cheese',
-    price: 6.49,
-    mealPrice: 8.99,
-    image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=600&fit=crop',
-    category: 'chicken-burgers',
-    hasMealOption: true
   }
 ];
 
