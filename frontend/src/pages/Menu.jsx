@@ -248,11 +248,17 @@ const Menu = () => {
                     >
                       <CardContent className="p-4">
                         <div className="flex items-center space-x-4">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="w-20 h-20 object-cover rounded-lg"
-                          />
+                          {item.image ? (
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              className="w-20 h-20 object-cover rounded-lg"
+                            />
+                          ) : (
+                            <div className="w-20 h-20 bg-red-100 rounded-lg flex items-center justify-center">
+                              <span className="text-red-600 text-3xl font-bold">🍔</span>
+                            </div>
+                          )}
                           <div className="flex-1">
                             <h3 className="font-bold text-gray-900">{item.name}</h3>
                             <p className="text-gray-500 text-sm line-clamp-1">{item.description}</p>
