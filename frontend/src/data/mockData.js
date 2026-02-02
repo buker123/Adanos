@@ -716,6 +716,13 @@ export const menuCategories = [
   { id: 'light-meals', name: 'Light Meals', items: lightMeals },
   { id: 'loaded-chips', name: 'Loaded Chips', items: loadedChips },
   { id: 'adanos-grilled', name: 'Adanos Grilled', items: adanosGrilled },
+  { id: 'sides', name: 'Sides', items: sides },
+  { id: 'kids-meals', name: 'Kids Meals', items: kidsMeals },
+  { id: 'milkshakes', name: 'Milkshakes', items: milkshakes },
+  { id: 'smoothies', name: 'Smoothies', items: smoothies },
+  { id: 'ice-cream', name: 'Ice Cream', items: iceCream },
+  { id: 'waffles', name: 'Waffles', items: waffles },
+  { id: 'desserts', name: 'Desserts', items: desserts },
 ];
 
 // All products combined
@@ -727,6 +734,12 @@ export const allProducts = [
   ...loadedChips,
   ...adanosGrilled,
   ...sides,
+  ...kidsMeals,
+  ...milkshakes,
+  ...smoothies,
+  ...iceCream,
+  ...waffles,
+  ...desserts,
   ...drinks,
   ...merchandise
 ];
