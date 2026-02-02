@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSlider from '../components/home/HeroSlider';
+import AboutSection from '../components/home/AboutSection';
 import StartOrder from '../components/home/StartOrder';
 import FeatureBoxes from '../components/home/FeatureBoxes';
 import CheckoutSection from '../components/home/CheckoutSection';
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <HeroSlider />
+      <AboutSection />
       <StartOrder />
       <FeatureBoxes />
       <CheckoutSection />
