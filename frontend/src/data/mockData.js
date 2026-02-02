@@ -292,30 +292,342 @@ export const adanosGrilled = [
 // SIDES
 export const sides = [
   {
-    id: 's1',
-    name: 'Classic Fries',
-    description: 'Crispy golden fries',
-    price: 3.99,
+    id: 'si1',
+    name: 'House Fries',
+    description: 'Crispy golden house fries',
+    price: 2.99,
     image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&h=600&fit=crop',
     category: 'sides',
     hasMealOption: false
   },
   {
-    id: 's2',
+    id: 'si2',
+    name: 'Cheesy House Fries',
+    description: 'House fries topped with melted cheese sauce',
+    price: 3.99,
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si3',
+    name: 'Sweet Potato Fries',
+    description: 'Crispy sweet potato fries',
+    price: 3.99,
+    image: 'https://images.unsplash.com/photo-1604152135912-04a022e23696?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si4',
+    name: 'Curly Fries',
+    description: 'Seasoned curly fries',
+    price: 3.49,
+    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si5',
+    name: 'Popcorn Chicken',
+    description: 'Crispy bite-sized chicken pieces',
+    price: 4.49,
+    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si6',
+    name: 'Chilli Cheese Bites',
+    description: 'Spicy cheese bites',
+    price: 4.49,
+    image: 'https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si7',
     name: 'Onion Rings',
     description: 'Crispy battered onion rings',
-    price: 4.99,
+    price: 3.49,
     image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=800&h=600&fit=crop',
     category: 'sides',
     hasMealOption: false
   },
   {
-    id: 's3',
-    name: 'Cheese Fries',
-    description: 'Fries topped with melted cheese sauce',
-    price: 5.99,
-    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop',
+    id: 'si8',
+    name: 'Peri Rice',
+    description: 'Flavourful peri peri rice',
+    price: 2.99,
+    image: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&h=600&fit=crop',
     category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si9',
+    name: 'Coleslaw',
+    description: 'Creamy homemade coleslaw',
+    price: 1.99,
+    image: 'https://images.unsplash.com/photo-1625938145744-e380515399bf?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si10',
+    name: 'Houmous',
+    description: 'Creamy houmous dip',
+    price: 2.49,
+    image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  },
+  {
+    id: 'si11',
+    name: 'Portion Salad',
+    description: 'Fresh mixed salad',
+    price: 2.49,
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=600&fit=crop',
+    category: 'sides',
+    hasMealOption: false
+  }
+];
+
+// MILKSHAKES
+export const milkshakes = [
+  {
+    id: 'mk1',
+    name: 'Ferrero Milkshake',
+    description: 'Creamy Ferrero Rocher flavoured milkshake',
+    price: 4.99,
+    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  },
+  {
+    id: 'mk2',
+    name: 'Lotus Milkshake',
+    description: 'Delicious Lotus Biscoff milkshake',
+    price: 4.99,
+    image: 'https://images.unsplash.com/photo-1568901839119-631418a3910d?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  },
+  {
+    id: 'mk3',
+    name: 'Oreo and Peanut Butter',
+    description: 'Oreo cookies with peanut butter milkshake',
+    price: 4.99,
+    image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  },
+  {
+    id: 'mk4',
+    name: 'Chocolate Milkshake',
+    description: 'Rich chocolate milkshake',
+    price: 3.99,
+    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  },
+  {
+    id: 'mk5',
+    name: 'Strawberry Milkshake',
+    description: 'Fresh strawberry milkshake',
+    price: 3.99,
+    image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  },
+  {
+    id: 'mk6',
+    name: 'Banana Milkshake',
+    description: 'Creamy banana milkshake',
+    price: 3.99,
+    image: 'https://images.unsplash.com/photo-1553787499-6f9133860278?w=800&h=600&fit=crop',
+    category: 'milkshakes',
+    hasMealOption: false
+  }
+];
+
+// SMOOTHIES
+export const smoothies = [
+  {
+    id: 'sm1',
+    name: 'Blueberry Bliss',
+    description: 'Refreshing blueberry smoothie',
+    price: 4.49,
+    image: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=800&h=600&fit=crop',
+    category: 'smoothies',
+    hasMealOption: false
+  },
+  {
+    id: 'sm2',
+    name: 'Strawberry Refresher',
+    description: 'Fresh strawberry smoothie',
+    price: 4.49,
+    image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&h=600&fit=crop',
+    category: 'smoothies',
+    hasMealOption: false
+  },
+  {
+    id: 'sm3',
+    name: 'Raspberry Dream',
+    description: 'Delicious raspberry smoothie',
+    price: 4.49,
+    image: 'https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=800&h=600&fit=crop',
+    category: 'smoothies',
+    hasMealOption: false
+  }
+];
+
+// KIDS MEALS
+export const kidsMeals = [
+  {
+    id: 'km1',
+    name: 'Popcorn Chicken Meal',
+    description: 'Popcorn chicken served with fries and a drink',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=800&h=600&fit=crop',
+    category: 'kids-meals',
+    hasMealOption: false
+  },
+  {
+    id: 'km2',
+    name: 'Chicken Fillet Burger Meal',
+    description: 'Kids chicken burger with fries and a drink',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&h=600&fit=crop',
+    category: 'kids-meals',
+    hasMealOption: false
+  },
+  {
+    id: 'km3',
+    name: 'Cheese Burger Meal',
+    description: 'Kids cheese burger with fries and a drink',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop',
+    category: 'kids-meals',
+    hasMealOption: false
+  }
+];
+
+// ICE CREAM
+export const iceCream = [
+  {
+    id: 'ic1',
+    name: 'Strawberry Ice Cream',
+    description: 'Creamy strawberry ice cream',
+    price: 2.99,
+    image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&h=600&fit=crop',
+    category: 'ice-cream',
+    hasMealOption: false
+  },
+  {
+    id: 'ic2',
+    name: 'Chocolate Ice Cream',
+    description: 'Rich chocolate ice cream',
+    price: 2.99,
+    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop',
+    category: 'ice-cream',
+    hasMealOption: false
+  },
+  {
+    id: 'ic3',
+    name: 'Oreo Ice Cream',
+    description: 'Oreo cookies and cream ice cream',
+    price: 3.49,
+    image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=800&h=600&fit=crop',
+    category: 'ice-cream',
+    hasMealOption: false
+  },
+  {
+    id: 'ic4',
+    name: 'Lotus Ice Cream',
+    description: 'Lotus Biscoff flavoured ice cream',
+    price: 3.49,
+    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800&h=600&fit=crop',
+    category: 'ice-cream',
+    hasMealOption: false
+  },
+  {
+    id: 'ic5',
+    name: 'Vanilla Ice Cream',
+    description: 'Classic vanilla ice cream',
+    price: 2.99,
+    image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&h=600&fit=crop',
+    category: 'ice-cream',
+    hasMealOption: false
+  }
+];
+
+// WAFFLES
+export const waffles = [
+  {
+    id: 'wf1',
+    name: 'Ferrero Rocher Waffle',
+    description: 'Belgian waffle topped with Ferrero Rocher and Nutella',
+    price: 6.99,
+    image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=800&h=600&fit=crop',
+    category: 'waffles',
+    hasMealOption: false
+  },
+  {
+    id: 'wf2',
+    name: 'Nutella Waffle',
+    description: 'Belgian waffle with Nutella spread',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1459789034005-ba29c5783491?w=800&h=600&fit=crop',
+    category: 'waffles',
+    hasMealOption: false
+  },
+  {
+    id: 'wf3',
+    name: 'Lotus Biscoff Waffle',
+    description: 'Belgian waffle with Lotus Biscoff spread and crumbs',
+    price: 6.49,
+    image: 'https://images.unsplash.com/photo-1598214886806-c87b84b7078b?w=800&h=600&fit=crop',
+    category: 'waffles',
+    hasMealOption: false
+  },
+  {
+    id: 'wf4',
+    name: 'Oreo Crumble Waffle',
+    description: 'Belgian waffle topped with Oreo crumbles and cream',
+    price: 6.49,
+    image: 'https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=800&h=600&fit=crop',
+    category: 'waffles',
+    hasMealOption: false
+  }
+];
+
+// DESSERTS
+export const desserts = [
+  {
+    id: 'ds1',
+    name: 'Cakes',
+    description: 'Selection of freshly baked cakes',
+    price: 4.99,
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop',
+    category: 'desserts',
+    hasMealOption: false
+  },
+  {
+    id: 'ds2',
+    name: 'Churros Lazo',
+    description: 'Crispy churros with chocolate dipping sauce',
+    price: 5.49,
+    image: 'https://images.unsplash.com/photo-1624371414361-e670e5e42b0d?w=800&h=600&fit=crop',
+    category: 'desserts',
+    hasMealOption: false
+  },
+  {
+    id: 'ds3',
+    name: 'Cookie Dough',
+    description: 'Warm cookie dough with ice cream',
+    price: 5.99,
+    image: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=800&h=600&fit=crop',
+    category: 'desserts',
     hasMealOption: false
   }
 ];
@@ -328,15 +640,6 @@ export const drinks = [
     description: 'Coca-Cola, Sprite, Fanta',
     price: 2.99,
     image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800&h=600&fit=crop',
-    category: 'drinks',
-    hasMealOption: false
-  },
-  {
-    id: 'd2',
-    name: 'Milkshake',
-    description: 'Vanilla, Chocolate, or Strawberry',
-    price: 5.99,
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop',
     category: 'drinks',
     hasMealOption: false
   }
