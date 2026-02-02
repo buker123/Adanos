@@ -292,11 +292,17 @@ const Menu = () => {
                 {/* Product Image & Info */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                   <div className="relative">
-                    <img
-                      src={selectedProduct.image}
-                      alt={selectedProduct.name}
-                      className="w-full h-80 object-cover rounded-xl shadow-lg"
-                    />
+                    {selectedProduct.image ? (
+                      <img
+                        src={selectedProduct.image}
+                        alt={selectedProduct.name}
+                        className="w-full h-80 object-cover rounded-xl shadow-lg"
+                      />
+                    ) : (
+                      <div className="w-full h-80 bg-red-100 rounded-xl shadow-lg flex items-center justify-center">
+                        <span className="text-red-600 text-8xl">🍔</span>
+                      </div>
+                    )}
                     <Badge className="absolute top-4 left-4 bg-green-600 text-white">
                       HALAL
                     </Badge>
