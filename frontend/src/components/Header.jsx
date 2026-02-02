@@ -20,6 +20,13 @@ const Header = () => {
     { name: 'Light Meals', href: '/menu?category=light-meals' },
     { name: 'Loaded Chips', href: '/menu?category=loaded-chips' },
     { name: 'Adanos Grilled', href: '/menu?category=adanos-grilled' },
+    { name: 'Sides', href: '/menu?category=sides' },
+    { name: 'Kids Meals', href: '/menu?category=kids-meals' },
+    { name: 'Milkshakes', href: '/menu?category=milkshakes' },
+    { name: 'Smoothies', href: '/menu?category=smoothies' },
+    { name: 'Ice Cream', href: '/menu?category=ice-cream' },
+    { name: 'Waffles', href: '/menu?category=waffles' },
+    { name: 'Desserts', href: '/menu?category=desserts' },
   ];
 
   const navigation = [
