@@ -91,7 +91,7 @@ const Header = () => {
                 className="text-white text-sm font-bold hover:text-red-100 transition-colors cursor-pointer"
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </nav>
 
