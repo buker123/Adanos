@@ -47,8 +47,12 @@ const AdminLogin = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-gray-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-md shadow-2xl">
-        <CardHeader className="text-center bg-red-600 text-white rounded-t-lg">
-          <CardTitle className="text-3xl font-black">ADANOS BURGER</CardTitle>
+        <CardHeader className="text-center bg-red-600 text-white rounded-t-lg py-6">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_adanos-burger/artifacts/8z4ye4cz_adanos%20logo.jpg" 
+            alt="Adanos Burger" 
+            className="h-16 object-contain mx-auto mb-2"
+          />
           <p className="text-red-100 mt-2">Admin Panel</p>
         </CardHeader>
         <CardContent className="p-8">
