@@ -178,10 +178,16 @@ const AdminDashboard = () => {
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <div className="bg-red-600 text-white shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div>
-            <h1 className="text-2xl font-black">ADANOS BURGER</h1>
-            <p className="text-red-200 text-sm">Admin Panel - Menu Editor</p>
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_adanos-burger/artifacts/8z4ye4cz_adanos%20logo.jpg" 
+              alt="Adanos Burger" 
+              className="h-10 object-contain"
+            />
+            <div>
+              <p className="text-red-200 text-sm">Admin Panel - Menu Editor</p>
+            </div>
           </div>
           <Button onClick={handleLogout} variant="outline" className="bg-white text-red-600 hover:bg-red-50">
             <LogOut className="mr-2 h-4 w-4" />
