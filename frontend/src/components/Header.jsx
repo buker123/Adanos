@@ -106,9 +106,11 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="bg-white px-6 py-2 rounded-full">
-              <h1 className="text-red-600 text-xl font-black tracking-tight">ADANOS BURGER</h1>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_adanos-burger/artifacts/8z4ye4cz_adanos%20logo.jpg" 
+              alt="Adanos Burger" 
+              className="h-12 object-contain"
+            />
           </Link>
 
           {/* Right Navigation */}

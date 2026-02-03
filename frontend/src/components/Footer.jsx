@@ -10,9 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-lg font-bold mb-4">ADANOS BURGER</h3>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_adanos-burger/artifacts/8z4ye4cz_adanos%20logo.jpg" 
+              alt="Adanos Burger" 
+              className="h-16 object-contain mb-4"
+            />
             <p className="text-gray-400 text-sm">
-              Oldham's finest smashburgers made with premium ingredients and served with love.
+              Oldham's finest halal smashburgers made with premium ingredients and served with love.
             </p>
           </div>
 
