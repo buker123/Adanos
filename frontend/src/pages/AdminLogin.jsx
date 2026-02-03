@@ -89,10 +89,6 @@ const AdminLogin = () => {
               {loading ? 'Logging in...' : 'Login to Admin Panel'}
             </Button>
           </form>
-          <div className="mt-6 text-center text-sm text-gray-600">
-            <p>Username: adanos</p>
-            <p>Password: adanos2026</p>
-          </div>
         </CardContent>
       </Card>
     </div>
