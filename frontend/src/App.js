@@ -11,6 +11,8 @@ import SignIn from "./pages/SignIn";
 import Menu from "./pages/Menu";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import Checkout from "./pages/Checkout";
+import OrderSuccess from "./pages/OrderSuccess";
 
 // Layout for public pages with Header and Footer
 const PublicLayout = () => (
@@ -38,6 +40,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/order-success" element={<OrderSuccess />} />
               <Route path="/signin" element={<SignIn />} />
             </Route>
           </Routes>
