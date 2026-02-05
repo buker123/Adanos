@@ -13,6 +13,8 @@ from datetime import datetime, timezone
 # Import admin and menu routes
 from routes.admin import router as admin_router
 from routes.menu import router as menu_router
+from routes.payments import router as payments_router
+from routes.webhook import router as webhook_router
 
 
 ROOT_DIR = Path(__file__).parent
@@ -76,6 +78,8 @@ app.include_router(api_router)
 # Include admin and menu routers
 app.include_router(admin_router)
 app.include_router(menu_router)
+app.include_router(payments_router)
+app.include_router(webhook_router)
 
 app.add_middleware(
     CORSMiddleware,
