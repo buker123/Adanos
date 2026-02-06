@@ -14,7 +14,7 @@ import axios from 'axios';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Checkout = () => {
-  const { cartItems, getCartTotal, clearCart } = useCart();
+  const { cart: cartItems, getCartTotal, clearCart } = useCart();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
